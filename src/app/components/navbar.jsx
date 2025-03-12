@@ -56,11 +56,11 @@ function Navbar() {
 
         <div className='flex md:flex-col items-center justify-center gap-2 px-1 max-md:order-1'>
 
-          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#first">
+          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#home">
             <GoHomeFill className='text-[17px] text-base-content mx-auto group-hover:text-success' />
           </Link>
 
-          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="/">
+          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#about">
             <FaMeh className=' text-base-content mx-auto group-hover:text-success' />
           </Link>
 

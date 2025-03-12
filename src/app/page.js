@@ -1,5 +1,6 @@
 "use client"
 
+import About from "./sections/about";
 import Banner from "./sections/banner";
 
 export default function Home() {
@@ -8,6 +9,8 @@ export default function Home() {
       <div>
 
         <Banner />
+        <div id="about"></div>
+        <About />
 
         <p className="bg-blue-500 text-base-100">2
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cupiditate laudantium illo repellendus corporis magni doloremque officia eligendi a commodi consectetur quibusdam omnis expedita architecto dolorum magnam culpa dolore veritatis perspiciatis quae tempore error dolores blanditiis? Accusamus, modi commodi neque ea rem sapiente dolorum, officia qui explicabo, asperiores maxime. Laudantium quam vero aspernatur, accusantium aliquam minima quos cumque quaerat maxime consequuntur exercitationem ipsa quia quod ducimus.
