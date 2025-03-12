@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+.font-dela {
+  font-family: var(--font-dela-gothic-one);
+}
+
+.font-syne {
+  font-family: var(--font-syne);
+}
+
 @plugin "daisyui" {
   themes: all;
+}
+
+.react-pdf__Page__canvas, .react-pdf__Page {
+  border-radius: .25rem !important;
 }
