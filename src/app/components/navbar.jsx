@@ -4,11 +4,11 @@ import ColorButtons from './colorButtons'
 import { GoHomeFill } from "react-icons/go";
 import { FaMeh } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa6";
-import Link from 'next/link';
 import { FaLinkedinIn } from "react-icons/fa6";
 import { VscGithub } from "react-icons/vsc";
 import { SiStackoverflow } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
+import Link from 'next/link';
 import ProfleSection from './profleSection';
 import GoogleMap from './googleMap';
 
