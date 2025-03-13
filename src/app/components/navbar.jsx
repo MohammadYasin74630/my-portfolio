@@ -64,7 +64,7 @@ function Navbar() {
             <FaMeh className=' text-base-content mx-auto group-hover:text-success' />
           </Link>
 
-          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="/">
+          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#projects">
             <FaBriefcase className='text-[15px] text-base-content mx-auto group-hover:text-success' />
           </Link>
 

@@ -23,7 +23,6 @@
     "react-map-gl": "^8.0.1",
     "react-pdf": "^9.2.1",
     "react-textarea-autosize": "^8.5.7",
-    "react-tooltip": "^5.28.0",
     "react-virtualized-auto-sizer": "^1.0.25",
     "reoverlay": "^1.0.3",
     "theme-change": "^2.5.0"

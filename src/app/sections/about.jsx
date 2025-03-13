@@ -40,20 +40,20 @@ function About() {
 
                 <div className=" max-w-[60ch] xl:mx-auto">
 
-                    <div className="space-y-4 leading-relaxed">
+                    <div className="space-y-4 ">
                         <h2 className="text-2xl font-bold inline-flex gap-1.5 items-center">
                             <TiInfoLarge className="text-3xl" /> About Me
                         </h2>
-                        <p className="pl-4">I'm a <strong>22-year-old MERN stack developer</strong> with a strong foundation in the basics of web development.</p>
+                        <p className="pl-4 text-lg">I'm a <strong>22-year-old MERN stack developer</strong> with a strong foundation in the basics of web development.</p>
 
-                        <p className="pl-4">As someone who spends most of my time in front of a computer, I've developed a knack for <strong>learning quickly</strong> and <strong>solving tech-related challenges</strong>. Whether it's <strong>debugging code</strong> or assisting friends with their PC issues through TeamViewer, technology has always been a natural strength of mine.</p>
+                        <p className="pl-4 text-lg">As someone who spends most of my time in front of a computer, I've developed a knack for <strong>learning quickly</strong> and <strong>solving tech-related challenges</strong>. Whether it's <strong>debugging code</strong> or assisting friends with their PC issues through TeamViewer, technology has always been a natural strength of mine.</p>
                     </div>
 
-                    <div className="mt-8 space-y-4 leading-relaxed">
+                    <div className="mt-8 space-y-4 ">
                         <h2 className="text-2xl font-bold inline-flex gap-2 items-center">
                             <PiStarFourFill className="text-xl" /> Skills
                         </h2>
-                        <p className="pl-4">Before enrolling in the MERN stack course by <Link href="https://www.programming-hero.com/" target='_blank'>Programming Hero</Link>, I spent 2 years self-learning web development. Now, I specialize in:</p>
+                        <p className="pl-4 text-lg">Before enrolling in the MERN stack course by <Link href="https://www.programming-hero.com/" target='_blank'>Programming Hero</Link>, I spent 2 years self-learning web development. Now, I specialize in:</p>
                         <div className="flex flex-wrap gap-2 pl-4">
                             <Image className="rounded-sm border border-base-100" src={react} alt="react logo" />
                             <Image className="rounded-sm border border-base-100/50" src={express} alt="expressJs logo" />
@@ -68,7 +68,7 @@ function About() {
 
                 <div>
 
-                    <div className="leading-relaxed max-md:mt-8 ">
+                    <div className=" max-md:mt-8 ">
                         <h2 className="text-2xl font-bold inline-flex gap-2 items-center">
                             <FaQuestion className="text-xl" /> FAQs
                         </h2>

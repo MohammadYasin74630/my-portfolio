@@ -9,7 +9,7 @@ import { MdArrowCircleRight } from "react-icons/md";
 import * as motion from "motion/react-client"
 import AutoSizer from "react-virtualized-auto-sizer";
 
-function Pdf() {
+function Pdf({file}) {
 
   const [numPages, setNumPages] = useState();
   const [pageNumber, setPageNumber] = useState(1);
@@ -87,7 +87,7 @@ function Pdf() {
 
       </div>
 
-      <Document className="w-[95vw] h-[80vh] sm:w-[75vw] md:w-[65vw] lg:w-[55vw] xl:w-[45vw]" file="/test.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+      <Document className="w-[95vw] h-[80vh] sm:w-[75vw] md:w-[65vw] lg:w-[55vw] xl:w-[45vw]" file={file} onLoadSuccess={onDocumentLoadSuccess}>
 
         <AutoSizer>
           {({ width }) => (

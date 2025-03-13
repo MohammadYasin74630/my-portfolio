@@ -15,7 +15,7 @@ import ResumeModal from "./resumeModal";
 function ProfleSection() {
 
   const viewResume = () => {
-    Reoverlay.showModal(ResumeModal)
+    Reoverlay.showModal(ResumeModal, {file: "/test.pdf"})
   }
 
   const sendMail = () => {

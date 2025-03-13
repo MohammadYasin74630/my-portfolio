@@ -3,11 +3,11 @@ import 'reoverlay/lib/ModalWrapper.css';
 import ModalWrapper from "./modalWraper";
 import Pdf from './pdf';
 
-const ResumeModal = () => {
+const ResumeModal = ({ file }) => {
 
     return (
         <ModalWrapper>
-            <Pdf />
+            <Pdf file={file} />
         </ModalWrapper>
     )
 }
