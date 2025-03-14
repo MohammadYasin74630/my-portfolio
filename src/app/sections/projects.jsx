@@ -211,7 +211,7 @@ function Projects() {
 
                         <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/90">
 
-                            <div className="max-w-md h-80 max-sm:hidden">
+                            <div className="max-w-md h-80 lg:h-96 max-sm:hidden">
 
                                 <div className="tabs tabs-box p-3">
                                     <input type="radio" name="my_tabs_3" className="tab" aria-label="Detail" defaultChecked />
