@@ -79,18 +79,18 @@ function Navbar() {
           </Link>
 
           <Link className="max-sm:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
-            href="mailto:mohammadyasin74630@gmail.com">
+            href="mailto:md.yasin.dev1@gmail.com">
             <SiGmail className=' text-base-content mx-auto group-hover:text-error ' />
           </Link>
 
           <Link className="max-md:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
-            href="https://github.com/mes-shahadat"
+            href="https://github.com/MohammadYasin74630"
             target='_blank'>
             <VscGithub className=' text-base-content mx-auto group-hover:text-secondary' />
           </Link>
 
           <Link className="max-md:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
-            href="https://stackoverflow.com/users/13922407/mes-shahdat"
+            href="https://stackoverflow.com/users/13922407"
             target='_blank' >
             <SiStackoverflow className=' text-base-content mx-auto group-hover:text-warning ' />
           </Link>

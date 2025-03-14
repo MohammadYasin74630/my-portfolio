@@ -33,7 +33,7 @@ export async function POST(req) {
 
         delete body.html
 
-        if (mailOptions.from !== "binodonprojukti@gmail.com") {
+        if (mailOptions.from !== "md.yasin.dev1@gmail.com") {
             await dbConnect("emails").insertOne(body)
         }
 

@@ -45,11 +45,11 @@ function Projects() {
         <>
             <h2 className="text-2xl font-bold w-11/12 mx-auto mb-5" id="projects">My Projects</h2>
 
-            <div className="grid gap-10 pb-40 sm:pb-8 md:pb-0" ref={container}>
+            <div className="grid gap-10 pb-52 sm:pb-8 md:pb-10 xl:pb-8" ref={container}>
 
                 <motion.div className=" sticky will-change-transform" style={{ scale: chillgamerScale, top: "0" }}>
 
-                    <div className=" w-11/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
+                    <div className=" w-11/12 lg:w-8/12 xl:w-6/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
 
                         <h3 className="text-xl">ChillGamer</h3>
                         <div className="flex gap-2 items-center w-min ">
@@ -68,12 +68,12 @@ function Projects() {
 
                     </div>
 
-                    <div className="w-11/12 mx-auto shadow-sm relative">
+                    <div className="w-11/12 lg:w-8/12 xl:w-6/12 mx-auto shadow-sm relative">
                         <Image className="w-full object-cover rounded-b-sm" src={chillgamer} alt="chill gamer website screenshot" />
 
                         <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/80">
 
-                            <div className="max-w-md h-80 max-sm:hidden">
+                            <div className="max-w-md h-[300px] max-sm:hidden">
 
                                 <div className="tabs tabs-box p-3">
                                     <input type="radio" name="my_tabs_1" className="tab" aria-label="Detail" defaultChecked />
@@ -115,7 +115,7 @@ function Projects() {
 
                 <motion.div className=" sticky will-change-transform" style={{ scale: vroomrentsScale, top: "10vh" }}>
 
-                    <div className=" w-11/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300">
+                    <div className=" w-11/12 lg:w-8/12 xl:w-6/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300">
 
                         <h3 className="text-xl">VroomRents</h3>
                         <div className="flex gap-2 items-center w-min ">
@@ -134,12 +134,12 @@ function Projects() {
 
                     </div>
 
-                    <div className="w-11/12 mx-auto shadow-sm relative">
+                    <div className="w-11/12 lg:w-8/12 xl:w-6/12 mx-auto shadow-sm relative">
                         <Image className="w-full object-cover rounded-b-sm" src={vroomrents} alt="vroom rents website screenshot" />
 
                         <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/80">
 
-                            <div className="max-w-md h-80 max-sm:hidden">
+                            <div className="max-w-md h-[300px] max-sm:hidden">
 
                                 <div className="tabs tabs-box p-3">
                                     <input type="radio" name="my_tabs_2" className="tab" aria-label="Detail" defaultChecked />
@@ -187,7 +187,7 @@ function Projects() {
 
                 <motion.div className=" sticky will-change-transform" style={{ scale: resiflowScale, top: "20vh" }}>
 
-                    <div className=" w-11/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
+                    <div className=" w-11/12 lg:w-8/12 xl:w-6/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
 
                         <h3 className="text-xl">ResiFlow</h3>
                         <div className="flex gap-2 items-center w-min ">
@@ -206,12 +206,12 @@ function Projects() {
 
                     </div>
 
-                    <div className="w-11/12 mx-auto shadow-sm relative">
+                    <div className="w-11/12 lg:w-8/12 xl:w-6/12 mx-auto shadow-sm relative">
                         <Image className="w-full object-cover rounded-b-sm" src={resiflow} alt="resi flow website screenshot" />
 
                         <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/90">
 
-                            <div className="max-w-md h-80 max-sm:hidden">
+                            <div className="max-w-md h-[300px] max-sm:hidden">
 
                                 <div className="tabs tabs-box p-3">
                                     <input type="radio" name="my_tabs_3" className="tab" aria-label="Detail" defaultChecked />
@@ -252,7 +252,7 @@ function Projects() {
 
                 <motion.div className=" sticky will-change-transform" style={{ scale: discountproScale, top: "30vh" }}>
 
-                    <div className=" w-11/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
+                    <div className=" w-11/12 lg:w-8/12 xl:w-6/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
 
                         <h3 className="text-xl">DiscountPro</h3>
                         <div className="flex gap-2 items-center w-min ">
@@ -271,12 +271,12 @@ function Projects() {
 
                     </div>
 
-                    <div className="w-11/12 mx-auto shadow-sm relative">
+                    <div className="w-11/12 lg:w-8/12 xl:w-6/12 mx-auto shadow-sm relative">
                         <Image className="w-full object-cover rounded-b-sm" src={discountPro} alt="discount pro website screenshot" />
 
                         <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/90">
 
-                            <div className="max-w-md h-80 max-sm:hidden">
+                            <div className="max-w-md h-[300px] max-sm:hidden">
 
                                 <div className="tabs tabs-box p-3">
                                     <input type="radio" name="my_tabs_4" className="tab" aria-label="Detail" defaultChecked />
