@@ -5,7 +5,38 @@
 }
 
 @plugin "daisyui" {
-  themes: all;
+  themes: light,
+    lofi,
+    silk,
+    cupcake,
+    winter,
+    nord,
+    pastel,
+    bumblebee,
+    corporate,
+    emerald,
+    garden,
+    fantasy,
+    autumn,
+    lemonade,
+    retro,
+    caramellatte,
+    cyberpunk,
+    valentine,
+    halloween,
+    forest,
+    business,
+    dim,
+    dracula,
+    dark,
+    sunset,
+    night,
+    synthwave,
+    aqua;
+}
+
+.ActiveTheme {
+  border: 2px solid violet;
 }
 
 .react-pdf__Page__canvas,

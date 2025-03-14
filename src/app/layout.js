@@ -31,7 +31,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="light" className="overflow-y-scrolls">
+    <html lang="en" data-theme="bumblebee" className="overflow-y-scrolls">
       <body
         className={`${syne.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-base-300 font-syne max-w-[2000px] mx-auto selection:bg-info`}
       >

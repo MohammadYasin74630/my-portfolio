@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Developer Portfolio
 
-## Getting Started
+![my portfolio website screenshot](/portfolio.png)
 
-First, run the development server:
+Welcome to my portfolio repo!. This website showcases my skills, projects, and experience as a MERN stack developer.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Live Demo:** [Visit My Portfolio](https://mohammad-yasin.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Responsive Navbar** – Easy access to all sections.
+- **Hero Section** – Introduction with my professional designation and photo.
+- **Resume Download** – Clickable button to download my resume.
+- **Social Links** – Connect with me on GitHub, LinkedIn, and other platforms.
+- **About Me** – My programming journey, interests, and hobbies.
+- **Skills** – Display of my technical skills.
+- **Projects** – Showcase of my notable projects with details.
+- **Contact** – Email and phone details for direct communication.
+- **Clean UI** – Fully responsive across all devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tech Stack
 
-## Learn More
+- **Frontend:** Next.js, Tailwind CSS, DaisyUI
+- **Backend:** Next.js API Routes (for handling emails)
+- **Database:** MongoDB (for storing received emails)
+- **Email Service:** Nodemailer
+- **Deployment:** Vercel
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔹 Project 1: **ChillGamer**
 
-## Deploy on Vercel
+- **Tech Used:** React, Express.js, MongoDB, Firebase, Netlify
+- **Live Demo:** [View Here](https://chill-gamer-1.netlify.app/)
+- **Client:** [Repo Link](https://github.com/MohammadYasin74630/ChillGamer-Client-Side)
+- **Server:** [Repo Link](https://github.com/MohammadYasin74630/ChillGamer-Server-Side)
+- **Description:** A sleek and user-friendly game review platform where gamers can share their thoughts on different games, maintain a personal watchlist, and explore reviews from others. The platform ensures a seamless and responsive user experience across all devices.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🔹 Project 2: **VroomRents**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Tech Used:** React, Express.js, MongoDB, Firebase
+- **Live Demo:** [View Here](https://vroom-rents.web.app/)
+- **Client:** [Repo Link](https://github.com/MohammadYasin74630/VroomRents-client-side)
+- **Server:** [Repo Link](https://github.com/MohammadYasin74630/VroomRents-server-side)
+- **Description:** A feature-rich car rental platform designed to simplify the process of booking and managing rental cars. With availability tracking, an intuitive booking system, and vendor management features, it offers a seamless experience for both renters and car owners.
+
+### 🔹 Project 3: **ResiFlow**
+
+- **Tech Used:** React, Express.js, MongoDB, Firebase, surge.sh
+- **Live Demo:** [View Here](https://resiflow.surge.sh/)
+- **Client:** [Repo Link](https://github.com/MohammadYasin74630/ResiFlow-client-side)
+- **Server:** [Repo Link](https://github.com/MohammadYasin74630/ResiFlow-server-side)
+- **Description:** A modern, user-friendly Building Management System (BMS) designed to simplify apartment rentals and property management. It provides role-based access for users, members, and admins, allowing seamless apartment browsing, agreement applications, rent payments, and announcements.
+
+## 📞 Contact
+
+> Feel free to explore my projects and reach out if you have any questions or opportunities!
+
+📧 Email: mohammadyasin74630@gmail.com

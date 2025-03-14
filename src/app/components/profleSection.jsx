@@ -15,7 +15,7 @@ import ResumeModal from "./resumeModal";
 function ProfleSection() {
 
   const viewResume = () => {
-    Reoverlay.showModal(ResumeModal, {file: "/test.pdf"})
+    Reoverlay.showModal(ResumeModal, { file: "/Mohammad-Yasin-FullStack-Dev-Resume.pdf" })
   }
 
   const sendMail = () => {
@@ -24,9 +24,14 @@ function ProfleSection() {
 
   return (
     <div>
-      <Image className="rounded-sm h-48 object-cover object-top" src={img3} alt="developer's image" />
-      <p className="font-bold text-xs text-center mt-3">FULLSTACK DEVELOPER</p>
-      <h3 className="text-xl font-dela text-center mt-2 mb-3">Mohammad Yasin</h3>
+      <div className="relative">
+        <Image className="rounded-sm h-48 object-cover object-top" src={img3} alt="developer's image" />
+        <div className="absolute top-0 bg-base-100/50 rounded-sm w-full h-full flex items-center justify-center backdrop-blur-sm">
+          <Image className="object-cover" src='/logo1.ico' width="32" height="32" alt="logo icon" />
+        </div>
+      </div>
+      <h3 className="text-xl font-dela text-center mt-3">Mohammad Yasin</h3>
+      <p className="font-bold text-xs text-center mt-2 mb-4">FULLSTACK DEVELOPER</p>
 
       <div className="flex gap-1 justify-evenly">
 
