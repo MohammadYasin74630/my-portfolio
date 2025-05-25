@@ -11,7 +11,7 @@ function GoogleMap() {
         latitude: 22.336722947625063,
         zoom: 10
       }}
-      style={{ maxWidth: 320, height: 200, borderRadius: 10, margin: "auto", border: "1px solid var(--color-base-300)" }}
+      style={{ maxWidth: 320, height: 200, borderRadius: 10, margin: "8px auto", border: "1px solid var(--color-base-300)" }}
       mapStyle={`https://api.maptiler.com/maps/streets/style.json?key=${process.env.NEXT_PUBLIC_map_tiler_api_key}`}
       attributionControl={false}
     >

@@ -45,7 +45,7 @@ function Projects() {
         <>
             <h2 className="text-2xl font-bold w-11/12 mx-auto mb-5" id="projects">My Projects</h2>
 
-            <div className="grid gap-10 pb-52 sm:pb-8 md:pb-10 xl:pb-8" ref={container}>
+            <div className="grid gap-10 pb-40 sm:pb-8 md:pb-0 xl:pb-8" ref={container}>
 
                 <motion.div className=" sticky will-change-transform" style={{ scale: chillgamerScale, top: "0" }}>
 
@@ -71,7 +71,7 @@ function Projects() {
                     <div className="w-11/12 lg:w-8/12 xl:w-6/12 mx-auto shadow-sm relative">
                         <Image className="w-full object-cover rounded-b-sm" src={chillgamer} alt="chill gamer website screenshot" />
 
-                        <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/80">
+                        <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/80 rounded-b-sm">
 
                             <div className="max-w-md h-[300px] max-sm:hidden">
 
@@ -137,7 +137,7 @@ function Projects() {
                     <div className="w-11/12 lg:w-8/12 xl:w-6/12 mx-auto shadow-sm relative">
                         <Image className="w-full object-cover rounded-b-sm" src={vroomrents} alt="vroom rents website screenshot" />
 
-                        <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/80">
+                        <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/80 rounded-b-sm">
 
                             <div className="max-w-md h-[300px] max-sm:hidden">
 
@@ -209,7 +209,7 @@ function Projects() {
                     <div className="w-11/12 lg:w-8/12 xl:w-6/12 mx-auto shadow-sm relative">
                         <Image className="w-full object-cover rounded-b-sm" src={resiflow} alt="resi flow website screenshot" />
 
-                        <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/90">
+                        <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/90 rounded-b-sm">
 
                             <div className="max-w-md h-[300px] max-sm:hidden">
 
@@ -274,7 +274,7 @@ function Projects() {
                     <div className="w-11/12 lg:w-8/12 xl:w-6/12 mx-auto shadow-sm relative">
                         <Image className="w-full object-cover rounded-b-sm" src={discountPro} alt="discount pro website screenshot" />
 
-                        <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/90">
+                        <div className="absolute top-0 w-full h-full flex items-center justify-center bg-base-content/90 rounded-b-sm">
 
                             <div className="max-w-md h-[300px] max-sm:hidden">
 

@@ -25,6 +25,8 @@ function ProfleSection() {
         <div className="absolute top-0 bg-base-100/50 rounded-sm w-full h-full flex items-center justify-center backdrop-blur-sm">
           <Image className="object-cover" src='/logo1.ico' width="32" height="32" alt="logo icon" />
         </div>
+
+        <button className="absolute bottom-2 left-1/2 -translate-x-1/2 shadow cursor-pointer transition-[scale] active:scale-90 bg-base-100 px-2 py-0.5 rounded-sm" onClick={viewResume}>View CV</button>
       </div>
 
       <div className="flex gap-1 justify-evenly my-4">
@@ -46,8 +48,6 @@ function ProfleSection() {
         </Link>
 
       </div>
-
-      <button className="block mx-auto mt-2 mb-4 cursor-pointer transition-colors active:text-info" onClick={viewResume}>View CV</button>
 
     </div>
   )

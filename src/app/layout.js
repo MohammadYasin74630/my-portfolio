@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Container from "./components/packageContainers";
 import LenisProvider from "./components/lenisProvider";
+import Footer from "./components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
             <Navbar />
             <div className="flex-1 -order-1">
               {children}
+              <Footer />
             </div>
           </main>
           <Container />

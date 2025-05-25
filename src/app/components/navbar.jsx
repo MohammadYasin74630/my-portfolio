@@ -41,7 +41,7 @@ function Navbar() {
 
               <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
 
-              <ul className="menu bg-base-200 text-base-content max-sm:max-w-64 max-w-80 p-3 h-full">
+              <ul className="menu flex-nowrap bg-base-200 text-base-content max-sm:max-w-64 max-w-80 p-3 h-full">
                 {/* Sidebar content here */}
                 <ProfleSection />
                 <GoogleMap />
@@ -70,7 +70,7 @@ function Navbar() {
 
         </div>
 
-        <div className='flex md:flex-col items-center justify-end gap-2 px-1'>
+        <div className='flex md:flex-col items-center justify-end gap-2 px-1 md:pb-2'>
 
           <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
             href="https://www.linkedin.com/in/mohammadyasin74630"
@@ -96,6 +96,7 @@ function Navbar() {
           </Link>
 
         </div>
+
       </div>
     </>
   )
