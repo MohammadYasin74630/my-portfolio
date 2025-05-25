@@ -9,7 +9,7 @@ const ContactModal = () => {
     const [close, setClose] = useState(false)
 
     return (
-        <ModalWrapper bg="bg-base-200" close={close} setClose={setClose}>
+        <ModalWrapper bg="bg-base-200" close={close} setClose={setClose} disableOutsideClose={true}>
             <ContactForm setClose={setClose} />
         </ModalWrapper>
     )

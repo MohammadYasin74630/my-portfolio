@@ -6,7 +6,7 @@ import * as motion from "motion/react-client"
 import style from "./modalWrapper.module.css"
 import { useSmoothScroller } from './lenisProvider';
 
-const ModalWrapper = ({ children, close, setClose, bg }) => {
+const ModalWrapper = ({ children, close, setClose, bg, disableOutsideClose }) => {
 
     const lenisRef = useSmoothScroller()
     const [isClosing, setIsClosing] = useState(false);
@@ -21,6 +21,9 @@ const ModalWrapper = ({ children, close, setClose, bg }) => {
     }
 
     const handleClickOutside = (event) => {
+
+        if (disableOutsideClose) return
+
         if (event.target === wrapperElement.current) {
             handleClose()
         }
