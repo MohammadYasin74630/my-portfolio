@@ -6,7 +6,7 @@ import * as motion from "motion/react-client"
 import style from "./modalWrapper.module.css"
 import { useSmoothScroller } from './lenisProvider';
 
-const ModalWrapper = ({ children, close, setClose }) => {
+const ModalWrapper = ({ children, close, setClose, bg }) => {
 
     const lenisRef = useSmoothScroller()
     const [isClosing, setIsClosing] = useState(false);
@@ -106,7 +106,7 @@ const ModalWrapper = ({ children, close, setClose }) => {
                     <IoCloseCircleOutline size={30} />
                 </button>
 
-                <div className={`bg-base-100 relative rounded-sm overflow-hidden shadow-sm `}>
+                <div className={`${bg || "bg-base-100"} relative rounded-sm overflow-hidden shadow-sm `}>
                     <div
                         className='overflow-auto'
                         onWheel={stopScrollPropagation}

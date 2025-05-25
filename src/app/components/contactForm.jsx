@@ -186,7 +186,7 @@ function ContactForm({ setClose }) {
     return (
         <>
             <form onSubmit={submitHandler} noValidate>
-                <fieldset className="fieldset min-[340px]:w-xs bg-base-200 border border-base-300 p-4 rounded-box" disabled={loading}>
+                <fieldset className="fieldset min-[340px]:w-xs bg-base-200 p-4 rounded-box" disabled={loading}>
                     <legend className="fieldset-legend">CONTACT</legend>
 
                     <label className="fieldset-label">Email <span className='font-sans text-error -ml-1'>*</span></label>

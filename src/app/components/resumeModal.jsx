@@ -6,7 +6,7 @@ import Pdf from './pdf';
 const ResumeModal = ({ file }) => {
 
     return (
-        <ModalWrapper>
+        <ModalWrapper bg="bg-white">
             <Pdf file={file} />
         </ModalWrapper>
     )
