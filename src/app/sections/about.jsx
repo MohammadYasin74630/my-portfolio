@@ -61,9 +61,9 @@ function About() {
                             <Image className="rounded-sm border border-base-100" src={nextjs} alt="react logo" />
                             <Image className="rounded-sm border border-base-100/50" src={express} alt="expressJs logo" />
                             <Image className="rounded-sm border border-base-100/50" src={mongodb} alt="mongodb logo" />
-                            <Image className="rounded-sm border border-base-100/50 w-[90px]" src={postgres} alt="prisma logo" />
+                            <Image className="rounded-sm border border-base-100/50 w-[90px]" src={postgres} alt="postgres logo" />
                             <Image className="rounded-sm border border-base-100/50 w-[90px]" src={prisma} alt="prisma logo" />
-                            <Image className="rounded-sm border border-base-100/50 w-[90px]" src={authjs} alt="firebase logo" />
+                            <Image className="rounded-sm border border-base-100/50 w-[90px]" src={authjs} alt="authjs logo" />
                             <Image className="rounded-sm border border-base-100/50" src={tailwind} alt="tailwind logo" />
                             <Image className="rounded-sm border border-base-100/50" src={git} alt="git logo" />
                         </div>
