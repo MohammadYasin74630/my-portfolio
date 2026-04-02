@@ -85,7 +85,7 @@ const ModalWrapper = ({ children, close, setClose, bg, disableOutsideClose }) =>
         <motion.div
             ref={wrapperElement}
             role="dialog"
-            className={`${style.reOverlay__modalWrapper}`}
+            className={`${style.reOverlay__modalWrapper} overscroll-contain`}
             onClick={handleClickOutside}
             initial={isClosing ? { backgroundColor: "rgba(0, 0, 0, 0.6)" } : { backgroundColor: "rgba(0, 0, 0, 0)" }}
             animate={isClosing ? { backgroundColor: "rgba(0, 0, 0, 0)" } : { backgroundColor: "rgba(0, 0, 0, 0.6)" }}

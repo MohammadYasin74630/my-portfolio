@@ -1,7 +1,9 @@
-import react from "@/app/assets/skills badge/react.svg"
+import nextjs from "@/app/assets/skills badge/NextJs.svg"
 import express from "@/app/assets/skills badge/express.svg"
 import mongodb from "@/app/assets/skills badge/mongodb.svg"
-import firebase from "@/app/assets/skills badge/firebase.svg"
+import postgres from "@/app/assets/skills badge/Postgres.svg"
+import authjs from "@/app/assets/skills badge/Auth.svg"
+import prisma from "@/app/assets/skills badge/Prisma.svg"
 import tailwind from "@/app/assets/skills badge/tailwindcss.svg"
 import git from "@/app/assets/skills badge/git.svg"
 import Image from "next/image"
@@ -55,10 +57,13 @@ function About() {
                         </h2>
                         <p className="pl-4 text-lg">Before enrolling in the MERN stack course by <Link href="https://www.programming-hero.com/" target='_blank'>Programming Hero</Link>, I spent 2 years self-learning web development. Now, I specialize in:</p>
                         <div className="flex flex-wrap gap-2 pl-4">
-                            <Image className="rounded-sm border border-base-100" src={react} alt="react logo" />
+                            {/* later badges are downloaded from: https://github.com/inttter/md-badges?tab=readme-ov-file */}
+                            <Image className="rounded-sm border border-base-100" src={nextjs} alt="react logo" />
                             <Image className="rounded-sm border border-base-100/50" src={express} alt="expressJs logo" />
                             <Image className="rounded-sm border border-base-100/50" src={mongodb} alt="mongodb logo" />
-                            <Image className="rounded-sm border border-base-100/50" src={firebase} alt="firebase logo" />
+                            <Image className="rounded-sm border border-base-100/50 w-[90px]" src={postgres} alt="prisma logo" />
+                            <Image className="rounded-sm border border-base-100/50 w-[90px]" src={prisma} alt="prisma logo" />
+                            <Image className="rounded-sm border border-base-100/50 w-[90px]" src={authjs} alt="firebase logo" />
                             <Image className="rounded-sm border border-base-100/50" src={tailwind} alt="tailwind logo" />
                             <Image className="rounded-sm border border-base-100/50" src={git} alt="git logo" />
                         </div>
@@ -77,8 +82,8 @@ function About() {
                                 <AccordionItem header="What type of services do you offer?">
                                     <ol className="list-decimal list-inside space-y-1">
                                         <li>Converting PSD/Figma designs into responsive, interactive React applications.</li>
-                                        <li>Designing and developing RESTful APIs using Express.js and MongoDB.</li>
-                                        <li>Creating complete web applications secured with Firebase & JWT.</li>
+                                        <li>Designing and developing RESTful APIs using MongoDB or Postgresql.</li>
+                                        <li>Creating complete web applications with social login & JWT.</li>
                                     </ol>
                                 </AccordionItem>
 
@@ -91,7 +96,7 @@ function About() {
                                 </AccordionItem>
 
                                 <AccordionItem header="Are you open to freelance or full-time work?">
-                                    I don't have a freelance account set up. So i'm only open to job opportunities at the moment.
+                                    I do have a freelance account set up. But i'm also open to job opportunities at the moment.
                                 </AccordionItem>
 
                                 <AccordionItem header="Do you work with other tech stacks?">
@@ -99,7 +104,7 @@ function About() {
                                 </AccordionItem>
 
                                 <AccordionItem header="Can you host my website?">
-                                    I can deploy react project on Netlify, Vercel, or Surge, but I don't have deep DevOps experience.
+                                    Yes, I can handle the full deployment of your React application, including setting up hosting and connecting it to your custom domain.
                                 </AccordionItem>
 
                                 <AccordionItem header=" How can I contact you?">

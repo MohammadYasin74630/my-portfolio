@@ -53,15 +53,15 @@ function Projects() {
 
                         <h3 className="text-xl">ChillGamer</h3>
                         <div className="flex gap-2 items-center w-min ">
-                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewChilGamerRequirement} >
+                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewChilGamerRequirement} title="view assignment requirements">
                                 <IoDocumentTextOutline />
                             </button>
 
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ChillGamer-Client-Side" target="_blank">
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ChillGamer-Client-Side" target="_blank" title="view project codes">
                                 <FiGithub />
                             </Link>
 
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://chill-gamer-1.netlify.app/" target="_blank">
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://chill-gamer-1.netlify.app/" target="_blank" title="open demo">
                                 <BiLinkExternal />
                             </Link>
                         </div>
@@ -119,15 +119,15 @@ function Projects() {
 
                         <h3 className="text-xl">VroomRents</h3>
                         <div className="flex gap-2 items-center w-min ">
-                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewVroomRentsRequirement} >
+                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewVroomRentsRequirement} title="view assignment requirements" >
                                 <IoDocumentTextOutline />
                             </button>
 
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/VroomRents-client-side" target="_blank">
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/VroomRents-client-side" target="_blank" title="view project codes">
                                 <FiGithub />
                             </Link>
 
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://vroom-rents.web.app/" target="_blank">
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://vroom-rents.web.app/" target="_blank" title="open demo">
                                 <BiLinkExternal />
                             </Link>
                         </div>
@@ -191,15 +191,15 @@ function Projects() {
 
                         <h3 className="text-xl">ResiFlow</h3>
                         <div className="flex gap-2 items-center w-min ">
-                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewResiflowRequirement} >
+                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewResiflowRequirement} title="view assignment requirements" >
                                 <IoDocumentTextOutline />
                             </button>
 
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ResiFlow-client-side" target="_blank">
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ResiFlow-client-side" target="_blank" title="view project codes">
                                 <FiGithub />
                             </Link>
 
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://resiflow.surge.sh/" target="_blank">
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://resiflow.surge.sh/" target="_blank" title="open demo">
                                 <BiLinkExternal />
                             </Link>
                         </div>
@@ -256,15 +256,15 @@ function Projects() {
 
                         <h3 className="text-xl">DiscountPro</h3>
                         <div className="flex gap-2 items-center w-min ">
-                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewDiscountProRequirement} >
+                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewDiscountProRequirement} title="view assignment requirements" >
                                 <IoDocumentTextOutline />
                             </button>
 
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/DiscountPro" target="_blank">
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/DiscountPro" target="_blank" title="view project codes">
                                 <FiGithub />
                             </Link>
 
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://discountpro.netlify.app/" target="_blank">
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://discountpro.netlify.app/" target="_blank" title="open demo">
                                 <BiLinkExternal />
                             </Link>
                         </div>

@@ -27,7 +27,7 @@ function Banner() {
                         <blockquote className="text-md xl:text-lg text-base-content/95 max-w-[45ch] border-l-4 border-base-content/20 pl-4 md:max-[965px]:hidden">I specialize in developing interactive web interfaces, designing REST APIs, and developing dynamic web applications. </blockquote>
                     </div>
 
-                    <motion.a href="/Mohammad-Yasin-FullStack-Dev-Resume.pdf" download
+                    <motion.a href="https://drive.google.com/file/d/1MvE1RUmAAdaueHNEKdbsFC8fq03JOr_w/view?usp=sharing" target="_blank"
                         className="inline-flex items-center gap-1 md:text-xl font-sans font-semibold bg-accent text-base-100 px-6 py-3 rounded-lg cursor-pointer mt-2 mr-2 shadow-sm shadow-base-content/20"
                         whileTap={{ scale: 0.9 }}
                     >
@@ -35,7 +35,7 @@ function Banner() {
                         <HiDownload />
                     </motion.a>
                     
-                    <motion.button href="/Mohammad-Yasin-FullStack-Dev-Resume.pdf" download
+                    <motion.button 
                         className="inline-flex items-center gap-2 md:text-xl font-sans font-semibold bg-accent text-base-100 px-6 py-3 rounded-lg cursor-pointer mt-2 shadow-sm shadow-base-content/20"
                         whileTap={{ scale: 0.9 }}
                         onClick={sendMail}
