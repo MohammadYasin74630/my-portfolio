@@ -14,6 +14,7 @@ import Link from "next/link"
 import { TiInfoLarge } from "react-icons/ti";
 import { FaQuestion } from "react-icons/fa";
 import { PiStarFourFill } from "react-icons/pi";
+import AboutYear from "./about-year"
 
 const AccordionItem = ({ header, ...rest }) => (
     <Item
@@ -46,7 +47,8 @@ function About() {
                         <h2 className="text-2xl font-bold inline-flex gap-1.5 items-center">
                             <TiInfoLarge className="text-3xl" /> About Me
                         </h2>
-                        <p className="pl-4 text-lg">I'm a <strong>22-year-old MERN stack developer</strong> with a strong foundation in the basics of web development.</p>
+
+                        <AboutYear />
 
                         <p className="pl-4 text-lg">As someone who spends most of my time in front of a computer, I've developed a knack for <strong>learning quickly</strong> and <strong>solving tech-related challenges</strong>. Whether it's <strong>debugging code</strong> or assisting friends with their PC issues through TeamViewer, technology has always been a natural strength of mine.</p>
                     </div>
@@ -55,7 +57,7 @@ function About() {
                         <h2 className="text-2xl font-bold inline-flex gap-2 items-center">
                             <PiStarFourFill className="text-xl" /> Skills
                         </h2>
-                        <p className="pl-4 text-lg">Before enrolling in the MERN stack course by <Link href="https://www.programming-hero.com/" target='_blank'>Programming Hero</Link>, I spent 2 years self-learning web development. Now, I specialize in:</p>
+                        <p className="pl-4 text-lg">I spent two years self-learning web development before enrolling in a professional MERN stack course. I now specialize in:</p>
                         <div className="flex flex-wrap gap-2 pl-4">
                             {/* later badges are downloaded from: https://github.com/inttter/md-badges?tab=readme-ov-file */}
                             <Image className="rounded-sm border border-base-100" src={nextjs} alt="react logo" />
