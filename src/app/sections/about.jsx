@@ -6,6 +6,7 @@ import authjs from "@/app/assets/skills badge/Auth.svg"
 import prisma from "@/app/assets/skills badge/Prisma.svg"
 import tailwind from "@/app/assets/skills badge/tailwindcss.svg"
 import git from "@/app/assets/skills badge/git.svg"
+import github from "@/app/assets/skills badge/github.svg"
 import Image from "next/image"
 import { Accordion, AccordionItem as Item } from '@szhsin/react-accordion';
 import styles from "./accordion.module.css";
@@ -68,6 +69,7 @@ function About() {
                             <Image className="rounded-sm border border-base-100/50 w-[90px]" src={authjs} alt="authjs logo" />
                             <Image className="rounded-sm border border-base-100/50" src={tailwind} alt="tailwind logo" />
                             <Image className="rounded-sm border border-base-100/50" src={git} alt="git logo" />
+                            <Image className="rounded-sm border border-base-100/50" src={github} alt="github logo" />
                         </div>
                     </div>
 

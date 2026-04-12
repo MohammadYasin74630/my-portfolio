@@ -41,7 +41,7 @@ function ProfleSection() {
           <FaTelegramPlane className='text-[20px] text-base-content mx-auto group-hover:text-info' />
         </Link>
         <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="http://discord.com/users/1256469260545560591" target='_blank'>
-          <FaDiscord className='text-[20px] text-base-content mx-auto group-hover:text-primary' />
+          <FaDiscord className='text-[20px] text-base-content mx-auto group-hover:text-[#5663f2]' />
         </Link>
 
       </div>
