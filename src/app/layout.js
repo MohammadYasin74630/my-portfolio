@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import Container from "./components/packageContainers";
 import LenisProvider from "./components/lenisProvider";
 import Footer from "./components/footer";
+import NavProvider from "./components/navProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,20 +34,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="bumblebee" className="overflow-y-scrolls">
-      <body
-        className={`${syne.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-base-300 font-syne max-w-[2000px] mx-auto selection:bg-info/50`}
-      >
-        <LenisProvider>
-          <main className="md:flex">
-            <Navbar />
-            <div className="flex-1 -order-1">
-              {children}
-              <Footer />
-            </div>
-          </main>
-          <Container />
-        </LenisProvider>
-      </body>
+      <NavProvider>
+        <body
+          className={`${syne.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-base-300 font-syne max-w-[2000px] mx-auto selection:bg-info/50`}
+        >
+          <LenisProvider>
+            <main className="md:flex">
+              <Navbar />
+              <div className="flex-1 -order-1">
+                {children}
+                <Footer />
+              </div>
+            </main>
+            <Container />
+          </LenisProvider>
+        </body>
+      </NavProvider>
     </html>
   );
 }

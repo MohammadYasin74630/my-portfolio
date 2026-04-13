@@ -52,22 +52,48 @@ html {
   will-change: transform;
 }
 
+
+.link-1 {
+  transform: translateY(0);
+}
+
+.link-2 {
+  transform: translateY(calc(100% + 8px));
+}
+
+.link-3 {
+  transform: translateY(calc(200% + 14px));
+}
+
+@media (width < 48rem) {
+  .link-1 {
+    transform: translateX(5px);
+  }
+
+  .link-2 {
+    transform: translateX(calc(100% + 11px));
+  }
+
+  .link-3 {
+    transform: translateX(calc(200% + 18px));
+  }
+}
+
 @keyframes borderRotate {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
 .border-animate {
-  background: conic-gradient(
-    from 0deg,
-    var(--color-base-300),
-    var(--color-neutral-content),
-    var(--color-base-content),
-    var(--color-base-300)
-  );
+  background: conic-gradient(from 0deg,
+      var(--color-base-300),
+      var(--color-neutral-content),
+      var(--color-base-content),
+      var(--color-base-300));
   animation: borderRotate 3s linear infinite;
 }

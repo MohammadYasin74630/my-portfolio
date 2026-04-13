@@ -1,9 +1,6 @@
 "use client"
 
 import ColorButtons from './colorButtons'
-import { GoHomeFill } from "react-icons/go";
-import { FaMeh } from "react-icons/fa";
-import { FaBriefcase } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { VscGithub } from "react-icons/vsc";
 import { SiStackoverflow } from "react-icons/si";
@@ -11,6 +8,7 @@ import { SiGmail } from "react-icons/si";
 import Link from 'next/link';
 import ProfleSection from './profleSection';
 import GoogleMap from './googleMap';
+import NavSectionLinks from './navSectionLinks';
 
 function Navbar() {
 
@@ -54,19 +52,11 @@ function Navbar() {
 
         </div>
 
-        <div className='flex md:flex-col items-center justify-center gap-2 px-1 max-md:order-1'>
+        <div className='relative -z-10 flex items-center justify-center max-md:order-1 '>
 
-          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#home">
-            <GoHomeFill className='text-[17px] text-base-content mx-auto group-hover:text-success' />
-          </Link>
-
-          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#about">
-            <FaMeh className=' text-base-content mx-auto group-hover:text-success' />
-          </Link>
-
-          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#projects">
-            <FaBriefcase className='text-[15px] text-base-content mx-auto group-hover:text-success' />
-          </Link>
+          <div className='relative flex md:flex-col items-center justify-center gap-2 px-1'>
+            <NavSectionLinks />
+          </div>
 
         </div>
 
