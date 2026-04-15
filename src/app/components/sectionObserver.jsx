@@ -3,10 +3,10 @@ import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer';
 import { useNavContext } from './navProvider';
 
-function SectionObserver({ section, children }) {
+function SectionObserver({ visibleWhen, section, children }) {
     const { setActiveSection } = useNavContext();
     const { ref, inView } = useInView({
-        threshold: 0.3,
+        threshold: visibleWhen,
     });
 
     useEffect(() => {

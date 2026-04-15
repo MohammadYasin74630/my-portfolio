@@ -6,6 +6,7 @@ import * as motion from "motion/react-client"
 import style from "./modalWrapper.module.css"
 import { useSmoothScroller } from './lenisProvider';
 
+// TO DO: close modal upon back navigation
 const ModalWrapper = ({ children, close, setClose, bg, disableOutsideClose }) => {
 
     const lenisRef = useSmoothScroller()

@@ -44,7 +44,7 @@ function Projects() {
 
     return (
         <>
-            <SectionObserver section="projects">
+            <SectionObserver visibleWhen={0.2} section="projects">
                 <h2 className="text-2xl font-bold w-11/12 mx-auto mb-5" id="projects">My Projects</h2>
 
                 <div className="grid gap-10 pb-40 sm:pb-8 md:pb-0 xl:pb-8" ref={container}>

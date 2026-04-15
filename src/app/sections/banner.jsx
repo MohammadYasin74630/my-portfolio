@@ -16,7 +16,7 @@ function Banner() {
 
     return (
         <>
-            <SectionObserver section="home">
+            <SectionObserver visibleWhen={0.4} section="home">
                 <div className="min-h-[80dvh] py-2 flex max-md:flex-col gap-4 items-center justify-center w-11/12 mx-auto " id="home">
 
                     <div className="mx-auto space-y-2 lg:space-y-4 max-lg:order-1 ">
