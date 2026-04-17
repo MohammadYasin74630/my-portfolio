@@ -7,7 +7,7 @@ import style from "./modalWrapper.module.css"
 import { useSmoothScroller } from './lenisProvider';
 
 // TO DO: close modal upon back navigation
-const ModalWrapper = ({ children, close, setClose, bg, disableOutsideClose }) => {
+const ModalWrapper = ({ children, outsideEl = null, close, setClose, bg, disableOutsideClose }) => {
 
     const lenisRef = useSmoothScroller()
     const [isClosing, setIsClosing] = useState(false);
@@ -86,7 +86,7 @@ const ModalWrapper = ({ children, close, setClose, bg, disableOutsideClose }) =>
         <motion.div
             ref={wrapperElement}
             role="dialog"
-            className={`${style.reOverlay__modalWrapper} overscroll-contain`}
+            className={`${style.reOverlay__modalWrapper} ${disableOutsideClose ? "" : "cursor-cross"}`}
             onClick={handleClickOutside}
             initial={isClosing ? { backgroundColor: "rgba(0, 0, 0, 0.6)" } : { backgroundColor: "rgba(0, 0, 0, 0)" }}
             animate={isClosing ? { backgroundColor: "rgba(0, 0, 0, 0)" } : { backgroundColor: "rgba(0, 0, 0, 0.6)" }}
@@ -110,16 +110,16 @@ const ModalWrapper = ({ children, close, setClose, bg, disableOutsideClose }) =>
                     <IoCloseCircleOutline size={30} />
                 </button>
 
-                <div className={`${bg || "bg-base-100"} relative rounded-sm overflow-hidden shadow-sm `}>
+                <div className={`${bg || "bg-base-100"} relative rounded-sm overflow-hidden shadow-sm cursor-auto`}>
                     <div
-                        className='overflow-auto'
+                        className='overflow-auto overscroll-contain'
                         onWheel={stopScrollPropagation}
                         onTouchMove={stopScrollPropagation}
                     >
                         {children}
                     </div>
                 </div>
-
+                {outsideEl}
             </motion.div>
 
         </motion.div >

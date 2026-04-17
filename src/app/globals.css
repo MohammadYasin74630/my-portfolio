@@ -44,6 +44,11 @@
   border-radius: .25rem !important;
 }
 
+.cursor-cross {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;scale:.6;'><text y='50%'>❌</text></svg>") 16 0, auto;
+}
+
+
 html {
   scroll-behavior: smooth;
 }

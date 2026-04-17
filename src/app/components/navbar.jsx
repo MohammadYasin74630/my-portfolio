@@ -37,7 +37,7 @@ function Navbar() {
               onTouchMove={stopScrollPropagation}
             >
 
-              <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+              <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay cursor-cross"></label>
 
               <ul className="menu flex-nowrap bg-base-200 text-base-content max-sm:max-w-64 max-w-80 p-3 h-full">
                 {/* Sidebar content here */}

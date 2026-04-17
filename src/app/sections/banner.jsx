@@ -25,7 +25,7 @@ function Banner() {
                             <h1 className="font-bold">Mohammad Yasin,</h1>
                         </div>
                         <div className="my-5 xl:my-10">
-                            <h2 className="text-lg min-[350px]:text-xl lg:text-2xl mb-3">A MERN Stack Developer Based in Bangladesh</h2>
+                            <h2 className="text-lg min-[350px]:text-xl lg:text-2xl mb-3">A Full Stack Developer Based in Bangladesh</h2>
                             <blockquote className="text-md xl:text-lg text-base-content/95 max-w-[45ch] border-l-4 border-base-content/20 pl-4 md:max-[965px]:hidden">I specialize in developing interactive web interfaces, designing REST APIs, and developing dynamic web applications. </blockquote>
                         </div>
 
