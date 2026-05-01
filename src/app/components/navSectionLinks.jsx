@@ -14,22 +14,38 @@ function NavSectionLinks() {
         projects: "link-3"
     }
 
+    const scrollTo = (section, e) => {
+        e.preventDefault();
+        document.getElementById(section)?.scrollIntoView();
+        history.replaceState(null, "", `#${section}`);
+    }
+
     return (
         <>
             <div className='absolute inset-0 flex max-md:flex-col justify-center pointer-events-none'>
                 <div className={`size-[35px] bg-base-300 rounded-lg transition-transform ${position[activeSection]}`}></div>
             </div>
-            <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#home">
+            <a
+                className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
+                href="#home"
+                onClick={(e) => scrollTo("home", e)}
+            >
                 <GoHomeFill className={`relative text-[17px] text-base-content mx-auto group-hover:text-success transition-colors ${activeSection === "home" && "text-success"}`} />
-            </Link>
+            </a>
 
-            <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#about">
+            <a className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
+                href="#about"
+                onClick={(e) => scrollTo("about", e)}
+            >
                 <FaMeh className={`relative text-base-content mx-auto group-hover:text-success transition-colors ${activeSection === "about" && "text-success"}`} />
-            </Link>
+            </a>
 
-            <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="#projects">
+            <a className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
+                href="#projects"
+                onClick={(e) => scrollTo("projects", e)}
+            >
                 <FaBriefcase className={`relative text-[15px] text-base-content mx-auto group-hover:text-success transition-colors ${activeSection === "projects" && "text-success"}`} />
-            </Link>
+            </a>
         </>
     )
 }

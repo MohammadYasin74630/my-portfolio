@@ -40,7 +40,7 @@ const AccordionItem = ({ header, ...rest }) => (
 function About() {
     return (
         <>
-            <SectionObserver visibleWhen={0.7} section="about">
+            <SectionObserver section="about">
                 <div className="grid md:grid-cols-2 gap-4 w-11/12 mx-auto min-h-[90dvh] min-[1120px]:items-center my-10">
 
                     <div className=" max-w-[60ch] xl:mx-auto">

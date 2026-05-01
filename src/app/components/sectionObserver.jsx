@@ -3,17 +3,21 @@ import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer';
 import { useNavContext } from './navProvider';
 
-function SectionObserver({ visibleWhen, section, children }) {
+function SectionObserver({ section, children }) {
     const { setActiveSection } = useNavContext();
+
     const { ref, inView } = useInView({
-        threshold: visibleWhen,
+        rootMargin: "-50% 0px -50% 0px",
+        threshold: 0,
     });
 
     useEffect(() => {
         if (inView) {
             setActiveSection(section);
         }
-    }, [inView, section]);
+
+        console.log(section, inView)
+    }, [inView, section, setActiveSection]);
 
     return (
         <div ref={ref}>
@@ -22,4 +26,4 @@ function SectionObserver({ visibleWhen, section, children }) {
     );
 }
 
-export default SectionObserver
+export default SectionObserver;

@@ -1,6 +1,7 @@
 "use client"
 
 import ColorButtons from './colorButtons'
+import { FaArrowDownLong } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { VscGithub } from "react-icons/vsc";
 import { SiStackoverflow } from "react-icons/si";
@@ -61,6 +62,8 @@ function Navbar() {
         </div>
 
         <div className='flex md:flex-col items-center justify-end gap-2 px-1 md:pb-2'>
+
+          <FaArrowDownLong className='text-error scale-125 animate-[bounce_0.8s_infinite] max-md:hidden' />
 
           <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
             href="https://www.linkedin.com/in/mohammadyasin74630"
