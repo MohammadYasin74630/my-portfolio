@@ -15,8 +15,6 @@ function SectionObserver({ section, children }) {
         if (inView) {
             setActiveSection(section);
         }
-
-        console.log(section, inView)
     }, [inView, section, setActiveSection]);
 
     return (

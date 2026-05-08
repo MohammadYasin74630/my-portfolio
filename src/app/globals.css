@@ -70,6 +70,10 @@ html {
   transform: translateY(calc(200% + 14px));
 }
 
+.link-4 {
+  transform: translateY(calc(300% + 19px));
+}
+
 @media (width < 48rem) {
   .link-1 {
     transform: translateX(5px);
@@ -81,6 +85,10 @@ html {
 
   .link-3 {
     transform: translateX(calc(200% + 18px));
+  }
+
+  .link-4 {
+    transform: translateX(calc(300% + 24px));
   }
 }
 

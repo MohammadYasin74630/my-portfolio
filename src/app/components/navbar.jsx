@@ -63,7 +63,7 @@ function Navbar() {
 
         <div className='flex md:flex-col items-center justify-end gap-2 px-1 md:pb-2'>
 
-          <FaArrowDownLong className='text-error scale-125 animate-[bounce_0.8s_infinite] max-md:hidden' />
+          <FaArrowDownLong className='text-error scale-125 animate-[bounce_0.8s_infinite] max-md:hidden -z-10' />
 
           <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
             href="https://www.linkedin.com/in/mohammadyasin74630"

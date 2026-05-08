@@ -3,6 +3,8 @@
 import TextareaAutosize from 'react-textarea-autosize';
 import { enqueueSnackbar } from 'notistack'
 import { useState } from 'react';
+import { IoLogoWhatsapp } from "react-icons/io";
+import { SiGmail } from "react-icons/si";
 
 function ContactForm({ setClose }) {
 
@@ -16,7 +18,7 @@ function ContactForm({ setClose }) {
         const message = form.message;
 
         if (!email.value) {
-            enqueueSnackbar("plz enter a email !", { variant: "error" })
+            enqueueSnackbar("plz enter your email !", { variant: "error" })
             email.style.border = "1px solid var(--color-error)"
             formAlright = false;
         }
@@ -187,17 +189,28 @@ function ContactForm({ setClose }) {
         <>
             <form onSubmit={submitHandler} noValidate>
                 <fieldset className="fieldset min-[340px]:w-xs bg-base-200 p-4 rounded-box" disabled={loading}>
-                    <legend className="fieldset-legend">CONTACT</legend>
+                    <legend className="fieldset-legend ">CONTACT</legend>
+
+                    <div className='text-base font-sans space-y-2'>
+                        <div className='flex items-center gap-x-2 -mt-2 '>
+                            <IoLogoWhatsapp className='text-lg text-[#1daa61]' />
+                            <p>(+88) 01912-898819</p>
+                        </div>
+                        <div className='flex items-center gap-x-2 mb-2 '>
+                            <SiGmail className='text-[#ea4335]' />
+                            <p>md.yasin.dev1@gmail.com</p>
+                        </div>
+                    </div>
 
                     <label className="fieldset-label">Email <span className='font-sans text-error -ml-1'>*</span></label>
                     <input type="email" className="input" placeholder="Your Email" name="email" />
 
                     <label className="fieldset-label">Message <span className='font-sans text-error -ml-1'>*</span></label>
-                    <TextareaAutosize className="min-h-10 p-3 input text-wrap" placeholder="Your Message" name="message" />
+                    <TextareaAutosize className="min-h-10 p-3 input text-wrap" placeholder="Your Message" name="message" minRows={4}/>
 
                     <button className="btn btn-neutral mt-4" type="submit">
                         {
-                            loading ? "Loading..." : "Submit"
+                            loading ? "Loading..." : "Send Message"
                         }
                     </button>
                 </fieldset>

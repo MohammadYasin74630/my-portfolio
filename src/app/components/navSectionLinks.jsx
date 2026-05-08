@@ -1,8 +1,8 @@
 import React from 'react'
 import { GoHomeFill } from "react-icons/go";
 import { FaMeh } from "react-icons/fa";
+import { MdRoute } from "react-icons/md";
 import { FaBriefcase } from "react-icons/fa6";
-import Link from 'next/link';
 import { useNavContext } from './navProvider';
 
 function NavSectionLinks() {
@@ -11,7 +11,8 @@ function NavSectionLinks() {
     const position = {
         home: "link-1",
         about: "link-2",
-        projects: "link-3"
+        journey: "link-3",
+        projects: "link-4"
     }
 
     const scrollTo = (section, e) => {
@@ -38,6 +39,13 @@ function NavSectionLinks() {
                 onClick={(e) => scrollTo("about", e)}
             >
                 <FaMeh className={`relative text-base-content mx-auto group-hover:text-success transition-colors ${activeSection === "about" && "text-success"}`} />
+            </a>
+
+            <a className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
+                href="#journey"
+                onClick={(e) => scrollTo("journey", e)}
+            >
+                <MdRoute className={`relative text-[15px] text-base-content scale-125 mx-auto group-hover:text-success transition-colors ${activeSection === "journey" && "text-success"}`} />
             </a>
 
             <a className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
