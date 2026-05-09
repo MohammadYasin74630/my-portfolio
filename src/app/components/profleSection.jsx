@@ -14,7 +14,7 @@ import ResumeModal from "./resumeModal";
 function ProfleSection() {
 
   const viewCertificate = () => {
-    Reoverlay.showModal(ResumeModal, { file: "/aspire-internship-certificate.pdf" })
+    Reoverlay.showModal(ResumeModal, { file: "/business card vertical.pdf" })
   }
 
   return (

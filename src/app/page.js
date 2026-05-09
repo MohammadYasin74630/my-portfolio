@@ -15,6 +15,7 @@ export default function Home() {
         <About />
         <div id="journey"></div>
         <Journey />
+        <div id="projects"></div>
         <Projects />
 
       </div>

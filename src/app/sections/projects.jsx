@@ -45,7 +45,15 @@ function Projects() {
     return (
         <>
             <SectionObserver section="projects">
-                <h2 className="text-2xl font-bold w-11/12 mx-auto mb-5" id="projects">My Projects</h2>
+
+                <div className="grid md:grid-cols-2 gap-4 w-11/12 mx-auto min-[1120px]:items-center mt-20">
+
+                    <div className=" max-w-[60ch] xl:mx-auto">
+                        <h2 className="text-2xl font-bold">My Projects</h2>
+                        <p className="text-xs select-none opacity-0">Spent around two years building a strong foundation in HTML, CSS, JavaScript, ReactJS, ExpressJS responsive design, and programming fundamentals.</p>
+                    </div>
+                </div>
+
 
                 <div className="grid gap-10 pb-40 sm:pb-8 md:pb-0 xl:pb-8" ref={container}>
 
