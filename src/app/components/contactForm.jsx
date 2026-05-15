@@ -77,7 +77,7 @@ function ContactForm({ setClose }) {
                             <p>Looking forward to connecting!</p>
                             <p>Best regards,</p>
                             <p><strong>Mohammad yasin</strong></p>
-                            <p>My CV: <a href="https://drive.google.com/file/d/16UI__zBJKmtuoU6RXYK8IOQ8dTnaBAcT/view?usp=sharing" style="color: #007bff; text-decoration: none;">View</a></p>
+                            <p>My CV: <a href="https://drive.google.com/file/d/1IVrxIPB-1K898tNtmOd2IzOxQgYX96AD/view?usp=sharing" style="color: #007bff; text-decoration: none;">View</a></p>
                             </div>
 
                             <div dir="ltr" class="gmail_signature" data-smartmail="gmail_signature">
