@@ -4,12 +4,13 @@ import About from "./sections/about";
 import Banner from "./sections/banner";
 import Journey from "./sections/journey";
 import Projects from "./sections/projects";
+import { Tooltip } from 'react-tooltip'
 
 export default function Home() {
   return (
     <>
       <div>
-
+        <Tooltip id="my-tooltip" />
         <Banner />
         <div id="about"></div>
         <About />

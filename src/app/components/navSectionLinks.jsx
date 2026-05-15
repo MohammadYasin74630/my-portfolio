@@ -30,6 +30,7 @@ function NavSectionLinks() {
                 className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
                 href="#home"
                 onClick={(e) => scrollTo("home", e)}
+                data-tooltip-id="my-tooltip" data-tooltip-content="Home"
             >
                 <GoHomeFill className={`relative text-[17px] text-base-content mx-auto group-hover:text-success transition-colors ${activeSection === "home" && "text-success"}`} />
             </a>
@@ -37,6 +38,7 @@ function NavSectionLinks() {
             <a className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
                 href="#about"
                 onClick={(e) => scrollTo("about", e)}
+                data-tooltip-id="my-tooltip" data-tooltip-content="About Me"
             >
                 <FaMeh className={`relative text-base-content mx-auto group-hover:text-success transition-colors ${activeSection === "about" && "text-success"}`} />
             </a>
@@ -44,6 +46,7 @@ function NavSectionLinks() {
             <a className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
                 href="#journey"
                 onClick={(e) => scrollTo("journey", e)}
+                data-tooltip-id="my-tooltip" data-tooltip-content="My Journey"
             >
                 <MdRoute className={`relative text-[15px] text-base-content scale-125 mx-auto group-hover:text-success transition-colors ${activeSection === "journey" && "text-success"}`} />
             </a>
@@ -51,6 +54,7 @@ function NavSectionLinks() {
             <a className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90"
                 href="#projects"
                 onClick={(e) => scrollTo("projects", e)}
+                data-tooltip-id="my-tooltip" data-tooltip-content="My Projects"
             >
                 <FaBriefcase className={`relative text-[15px] text-base-content mx-auto group-hover:text-success transition-colors ${activeSection === "projects" && "text-success"}`} />
             </a>

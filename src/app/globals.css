@@ -110,3 +110,9 @@ html {
       var(--color-base-300));
   animation: borderRotate 3s linear infinite;
 }
+
+#my-tooltip {
+  background: var(--color-primary);
+  color: var(--color-primary-content);
+  z-index: 10;
+}
