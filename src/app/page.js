@@ -10,13 +10,20 @@ export default function Home() {
   return (
     <>
       <div>
-        <Tooltip id="my-tooltip" />
+        <Tooltip id="my-tooltip"
+          openOnClick={false}
+          positionStrategy="fixed"
+          globalCloseEvents={{
+            scroll: true,
+          }}
+        />
+        <div className="max-md:pt-5 max-md:scroll-mt-10" id="home"></div>
         <Banner />
-        <div id="about"></div>
+        <div className="max-md:scroll-mt-5" id="about"></div>
         <About />
-        <div id="journey"></div>
+        <div className="max-md:scroll-mt-5" id="journey"></div>
         <Journey />
-        <div id="projects"></div>
+        <div className="max-md:scroll-mt-5" id="projects"></div>
         <Projects />
 
       </div>
