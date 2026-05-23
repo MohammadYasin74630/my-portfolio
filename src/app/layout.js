@@ -6,6 +6,7 @@ import LenisProvider from "./components/lenisProvider";
 import Footer from "./components/footer";
 import NavProvider from "./components/navProvider";
 import PdfProvider from "./components/pdfProvider";
+import VideoBackground from "./components/videoBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -136,10 +137,11 @@ export default function RootLayout({ children }) {
       <NavProvider>
         <PdfProvider>
           <body
-            className={`${syne.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-base-300 font-syne max-w-[2000px] mx-auto selection:bg-info/50`}
+            className={`${syne.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-syne max-w-[2000px] mx-auto selection:bg-info/50`}
           >
+            {/* <VideoBackground /> */}
             <LenisProvider>
-              <main className="md:flex">
+              <main className="md:flex bg-base-300">
                 <Navbar />
                 <div className="flex-1 -order-1">
                   {children}
