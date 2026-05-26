@@ -19,13 +19,13 @@ function Banner() {
             <SectionObserver section="home">
                 <div className="min-h-[80dvh] py-2 flex max-md:flex-col gap-4 items-center justify-center w-11/12 mx-auto ">
 
-                    <div className="mx-auto space-y-2 lg:space-y-4 max-lg:order-1 ">
+                    <div className="max-w-[75ch] mx-auto space-y-2 lg:space-y-4 max-lg:order-1 ">
                         <div className="text-2xl min-[350px]:text-4xl min-[1020px]:text-6xl">
                             <p className="font-bold mb-2">Hello ! I'm</p>
                             <h1 className="font-bold">Mohammad Yasin,</h1>
                         </div>
                         <div className="my-5 xl:my-10">
-                            <h2 className="text-lg min-[350px]:text-xl lg:text-2xl mb-3">A Full Stack Developer Based in Bangladesh</h2>
+                            <h2 className="text-lg min-[350px]:text-xl lg:text-2xl mb-3">I build Next.js web applications for startups and small businesses.</h2>
                             <blockquote className="text-md xl:text-lg text-base-content/95 max-w-[45ch] border-l-4 border-base-content/20 pl-4 md:max-[965px]:hidden">I specialize in developing interactive web interfaces, designing REST APIs, and developing dynamic web applications. </blockquote>
                         </div>
 

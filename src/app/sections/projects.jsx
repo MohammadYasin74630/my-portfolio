@@ -13,6 +13,7 @@ import { useRef } from "react"
 import * as motion from "motion/react-client"
 import { useScroll, useTransform } from "motion/react"
 import SectionObserver from "../components/sectionObserver"
+import { chillGamerReq, discountProReq, resiFlowReq, vroomRentsReq } from "@/lib/requirements"
 
 function Projects() {
 
@@ -63,11 +64,11 @@ function Projects() {
 
                             <h3 className="text-xl">ChillGamer</h3>
                             <div className="flex gap-2 items-center w-min ">
-                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewChilGamerRequirement} title="view requirements">
+                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewChilGamerRequirement} title="View requirements">
                                     <IoDocumentTextOutline />
                                 </button>
 
-                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ChillGamer-Client-Side" target="_blank" title="view codes">
+                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ChillGamer-Client-Side" target="_blank" title="View codes">
                                     <FiGithub />
                                 </Link>
 
@@ -77,7 +78,7 @@ function Projects() {
                                     <Link
                                         href="https://chill-gamer-1.netlify.app/"
                                         target="_blank"
-                                        title="open demo"
+                                        title="Live demo"
                                         className="relative inline-flex items-center justify-center text-xl cursor-pointer p-2 bg-base-100 rounded-lg"
                                     >
                                         <BiLinkExternal />
@@ -95,28 +96,52 @@ function Projects() {
                                 <div className="max-w-md h-[300px] max-sm:hidden">
 
                                     <div className="tabs tabs-box p-3">
-                                        <input type="radio" name="my_tabs_1" className="tab" aria-label="Detail" defaultChecked />
+                                        <input type="radio" name="my_tabs_1" className="tab" aria-label="Overview" defaultChecked />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
                                             Chill Gamer is a sleek and user-friendly game review platform where gamers can share their thoughts on different games, maintain a personal watchlist, and explore reviews from others. <br /> <br /> The platform ensures a seamless and responsive user experience across all devices.
                                         </div>
 
-                                        <input type="radio" name="my_tabs_1" className="tab" aria-label="Purpose" />
+                                        <input type="radio" name="my_tabs_1" className="tab" aria-label="Key Features" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            The idea behind Chill Gamer was to create a dedicated space for game enthusiasts to review and track games effortlessly. <br /> <br /> Key features like dynamic filtering, review management, and a watchlist were carefully implemented to enhance engagement.
+                                            <ul className="list-decimal list-inside">
+                                                <li>Supports both dark and light themes.</li>
+                                                <li>Filter game reviews by genre, title (A-Z), rating, year, and order</li>
+                                                <li>Pagination for faster loading and smoother navigation. </li>
+                                            </ul>
                                         </div>
 
-                                        <input type="radio" name="my_tabs_1" className="tab" aria-label="Solves" />
+                                        <input type="radio" name="my_tabs_1" className="tab" aria-label="Tech Stack" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            Gaming communities often rely on scattered platforms for reviews, making it difficult to get personalized and structured feedback. <br /> <br /> Chill Gamer bridges this gap by providing an intuitive interface where users can quickly find trusted reviews, contribute their insights, and maintain a game watchlist—all in one place.
+                                            <div className="flex gap-2 flex-wrap">
+                                                {
+                                                    chillGamerReq.map((logo, idx) => {
+                                                        if (logo.show) return (
+                                                            <a
+                                                                key={idx}
+                                                                href={logo.link}
+                                                                target="_blank"
+                                                            >
+                                                                <Image
+                                                                    className="rounded-full object-cover"
+                                                                    src={logo.path}
+                                                                    alt={logo.alt}
+                                                                    width="32" height="32"
+                                                                    data-tooltip-id="my-tooltip" data-tooltip-content={logo.title}
+                                                                />
+                                                            </a>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
                                         </div>
 
                                         <input type="radio" name="my_tabs_1" className="tab" aria-label="Challenges" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            <ul className="list-decimal list-inside">
-                                                <li>Authentication Complexity</li>
-                                                <li>Dynamic Review Management</li>
-                                                <li>Sorting & Filtering Performance</li>
-                                                <li>Dark/Light Mode Persistence</li>
+                                            <ul className="list-disc list-inside">
+                                                <li>Building whole Authentication UI by myself</li>
+                                                <li>First time making pagination without learning it</li>
+                                                <li>First time doing Sorting & Filtering by myself</li>
+                                                <li>Making sure all section & elements works with Dark/Light mode</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -138,11 +163,11 @@ function Projects() {
 
                             <h3 className="text-xl">VroomRents</h3>
                             <div className="flex gap-2 items-center w-min ">
-                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewVroomRentsRequirement} title="view requirements" >
+                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewVroomRentsRequirement} title="View requirements" >
                                     <IoDocumentTextOutline />
                                 </button>
 
-                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/VroomRents-client-side" target="_blank" title="view codes">
+                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/VroomRents-client-side" target="_blank" title="View codes">
                                     <FiGithub />
                                 </Link>
 
@@ -152,7 +177,7 @@ function Projects() {
                                     <Link
                                         href="https://vroom-rents.web.app/"
                                         target="_blank"
-                                        title="open demo"
+                                        title="Live demo"
                                         className="relative inline-flex items-center justify-center text-xl cursor-pointer p-2 bg-base-100 rounded-lg"
                                     >
                                         <BiLinkExternal />
@@ -171,34 +196,52 @@ function Projects() {
                                 <div className="max-w-md h-[300px] max-sm:hidden">
 
                                     <div className="tabs tabs-box p-3">
-                                        <input type="radio" name="my_tabs_2" className="tab" aria-label="Detail" defaultChecked />
+                                        <input type="radio" name="my_tabs_2" className="tab" aria-label="Overview" defaultChecked />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
                                             VroomRents is a feature-rich car rental platform designed to simplify the process of booking and managing rental cars. <br /> <br /> With availability tracking, an intuitive booking system, and vendor management features, it offers a seamless experience for both renters and car owners.
                                         </div>
 
-                                        <input type="radio" name="my_tabs_2" className="tab" aria-label="Purpose" />
+                                        <input type="radio" name="my_tabs_2" className="tab" aria-label="Key Features" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            The development of VroomRents was guided by the need for a fast, responsive, and scalable car rental solution. The focus was on creating a system where:
-                                            <br /> <br />
-                                            <ul className="list-disc list-inside ml-2">
-                                                <li>Users can easily filter & and book available cars</li>
-                                                <li>Vendors can add & manage their car listings</li>
-                                                <li>The UI remains smooth & engaging across devices</li>
+                                            <ul className="list-decimal list-inside">
+                                                <li>Some pages have switchable layout modes that persist across visits.</li>
+                                                <li>Real-time schedule validation prevent overlapping car bookings between users.</li>
+                                                <li>Users can upload any number of images when adding a car listing.</li>
                                             </ul>
                                         </div>
 
-                                        <input type="radio" name="my_tabs_2" className="tab" aria-label="Solves" />
+                                        <input type="radio" name="my_tabs_2" className="tab" aria-label="Tech Stack" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            Traditional car rental platforms often suffer from clunky interfaces, lack of real-time updates, and slow booking processes. <br /> <br /> VroomRents solves these pain points by providing a responsive design for easy navigation, preventing booking conflicts & allowing vendors to manage listings seamlessly.
+                                            <div className="flex gap-2 flex-wrap">
+                                                {
+                                                    vroomRentsReq.map((logo, idx) => {
+                                                        if (logo.show) return (
+                                                            <a
+                                                                key={idx}
+                                                                href={logo.link}
+                                                                target="_blank"
+                                                            >
+                                                                <Image
+                                                                    className="rounded-full object-cover"
+                                                                    src={logo.path}
+                                                                    alt={logo.alt}
+                                                                    width="32" height="32"
+                                                                    data-tooltip-id="my-tooltip" data-tooltip-content={logo.title}
+                                                                />
+                                                            </a>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
                                         </div>
 
                                         <input type="radio" name="my_tabs_2" className="tab" aria-label="Challenges" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            <ul className="list-decimal list-inside">
-                                                <li>Server Side Validation</li>
-                                                <li>Role-Based Features</li>
-                                                <li>Switchable View Mode</li>
-                                                <li>Responsive Carousal</li>
+                                            <ul className="list-disc list-inside">
+                                                <li>Adding extensive Client & Server Side Validation</li>
+                                                <li>Tried to make Role-Based Features by myself</li>
+                                                <li>Making switchable View Mode that persist</li>
+                                                <li>Making the carousel in car details page Responsive</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -220,11 +263,11 @@ function Projects() {
 
                             <h3 className="text-xl">ResiFlow</h3>
                             <div className="flex gap-2 items-center w-min ">
-                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewResiflowRequirement} title="view requirements" >
+                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewResiflowRequirement} title="View requirements" >
                                     <IoDocumentTextOutline />
                                 </button>
 
-                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ResiFlow-client-side" target="_blank" title="view codes">
+                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ResiFlow-client-side" target="_blank" title="View codes">
                                     <FiGithub />
                                 </Link>
 
@@ -234,7 +277,7 @@ function Projects() {
                                     <Link
                                         href="https://resiflow.surge.sh/"
                                         target="_blank"
-                                        title="open demo"
+                                        title="Live demo"
                                         className="relative inline-flex items-center justify-center text-xl cursor-pointer p-2 bg-base-100 rounded-lg"
                                     >
                                         <BiLinkExternal />
@@ -253,27 +296,51 @@ function Projects() {
                                 <div className="max-w-md h-[300px] max-sm:hidden">
 
                                     <div className="tabs tabs-box p-3">
-                                        <input type="radio" name="my_tabs_3" className="tab" aria-label="Detail" defaultChecked />
+                                        <input type="radio" name="my_tabs_3" className="tab" aria-label="Overview" defaultChecked />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
                                             ResiFlow is a modern, user-friendly Building Management System (BMS) designed to simplify apartment rentals and property management. <br /> <br /> It provides role-based access for users, members, and admins, allowing seamless apartment browsing, agreement applications, rent payments, and announcements.
                                         </div>
 
-                                        <input type="radio" name="my_tabs_3" className="tab" aria-label="Purpose" />
+                                        <input type="radio" name="my_tabs_3" className="tab" aria-label="Key Features" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            The development of ResiFlow was driven by the need for an efficient and intuitive solution for managing apartment rentals. <br /> <br /> The focus was on a clean UI/UX, secure authentication, and smooth data handling.
+                                            <ul className="list-decimal list-inside">
+                                                <li>Unique dashboards for users, members, and admins. </li>
+                                                <li>Payment supports monthly/advance payments with one-time discount codes. </li>
+                                                <li>Used TanStack Query to improve application performance with efficient caching.</li>
+                                            </ul>
                                         </div>
 
-                                        <input type="radio" name="my_tabs_3" className="tab" aria-label="Solves" />
+                                        <input type="radio" name="my_tabs_3" className="tab" aria-label="Tech Stack" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            Traditional apartment renting and management often involve paper-based agreements, manual rent collection, and inefficient communication between landlords and tenants. <br /> <br /> ResiFlow streamlines the entire process by providing a centralized platform & Simplifying rent payments with discounts !
+                                            <div className="flex gap-2 flex-wrap">
+                                                {
+                                                    resiFlowReq.map((logo, idx) => {
+                                                        if (logo.show) return (
+                                                            <a
+                                                                key={idx}
+                                                                href={logo.link}
+                                                                target="_blank"
+                                                            >
+                                                                <Image
+                                                                    className="rounded-full object-cover"
+                                                                    src={logo.path}
+                                                                    alt={logo.alt}
+                                                                    width="32" height="32"
+                                                                    data-tooltip-id="my-tooltip" data-tooltip-content={logo.title}
+                                                                />
+                                                            </a>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
                                         </div>
 
                                         <input type="radio" name="my_tabs_3" className="tab" aria-label="Challenges" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            <ul className="list-decimal list-inside">
-                                                <li>Managing Role-Based Access</li>
-                                                <li>Data Fetching Optimization</li>
-                                                <li>Ensuring Secure Payments</li>
+                                            <ul className="list-disc list-inside">
+                                                <li>First time building Role-Based Access</li>
+                                                <li>First doing Data caching in client browser</li>
+                                                <li>First time adding a Payment gateway</li>
                                                 <li>Tight Deadline</li>
                                             </ul>
                                         </div>
@@ -295,11 +362,11 @@ function Projects() {
 
                             <h3 className="text-xl">DiscountPro</h3>
                             <div className="flex gap-2 items-center w-min ">
-                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewDiscountProRequirement} title="view requirements" >
+                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewDiscountProRequirement} title="View requirements" >
                                     <IoDocumentTextOutline />
                                 </button>
 
-                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/DiscountPro" target="_blank" title="view codes">
+                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/DiscountPro" target="_blank" title="View codes">
                                     <FiGithub />
                                 </Link>
 
@@ -309,7 +376,7 @@ function Projects() {
                                     <Link
                                         href="https://discountpro.netlify.app/"
                                         target="_blank"
-                                        title="open demo"
+                                        title="Live demo"
                                         className="relative inline-flex items-center justify-center text-xl cursor-pointer p-2 bg-base-100 rounded-lg"
                                     >
                                         <BiLinkExternal />
@@ -328,27 +395,51 @@ function Projects() {
                                 <div className="max-w-md h-[300px] max-sm:hidden">
 
                                     <div className="tabs tabs-box p-3">
-                                        <input type="radio" name="my_tabs_4" className="tab" aria-label="Detail" defaultChecked />
+                                        <input type="radio" name="my_tabs_4" className="tab" aria-label="Overview" defaultChecked />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
                                             Discount PRO is a coupon collecting web application designed to help users find and use discount coupons from popular e-commerce brands in Bangladesh. <br /> <br /> The platform consolidates active promotions in one place, allowing users to easily access and apply discounts while shopping online.
                                         </div>
 
-                                        <input type="radio" name="my_tabs_4" className="tab" aria-label="Purpose" />
+                                        <input type="radio" name="my_tabs_4" className="tab" aria-label="Key Features" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            The purpose of Discount PRO was to simplify the discount hunting process for online shoppers. Many e-commerce sites offer promotional codes, but users often struggle to find the latest deals. <br /> <br /> The focus was on creating an intuitive UI where users can browse brands and collect coupons effortlessly.
+                                            <ul className="list-decimal list-inside">
+                                                <li>Real-time search with instant filtering as users type.</li>
+                                                <li>First time adding Google social login for authencation.</li>
+                                                <li>Multi-directional carousel - supporting left, right, up, and down navigation.</li>
+                                            </ul>
                                         </div>
 
-                                        <input type="radio" name="my_tabs_4" className="tab" aria-label="Solves" />
+                                        <input type="radio" name="my_tabs_4" className="tab" aria-label="Tech Stack" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            Shoppers often miss out on discounts due to scattered and unorganized coupon listings. <br /> <br /> Discount PRO solves this by centralizing active discount codes from various brands in one platform and offering brand ratings and sale indicators, making it easier to choose the best offers.
+                                            <div className="flex gap-2 flex-wrap">
+                                                {
+                                                    discountProReq.map((logo, idx) => {
+                                                        if (logo.show) return (
+                                                            <a
+                                                                key={idx}
+                                                                href={logo.link}
+                                                                target="_blank"
+                                                            >
+                                                                <Image
+                                                                    className="rounded-full object-cover"
+                                                                    src={logo.path}
+                                                                    alt={logo.alt}
+                                                                    width="32" height="32"
+                                                                    data-tooltip-id="my-tooltip" data-tooltip-content={logo.title}
+                                                                />
+                                                            </a>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
                                         </div>
 
                                         <input type="radio" name="my_tabs_4" className="tab" aria-label="Challenges" />
                                         <div className="tab-content bg-base-100 border-base-300 rounded-field mt-3 p-3">
-                                            <ul className="list-decimal list-inside">
-                                                <li>Designing Without Figma</li>
-                                                <li>Lack of Animation Skill</li>
-                                                <li>Copy-to-Clipboard in Overlay</li>
+                                            <ul className="list-disc list-inside">
+                                                <li>My first project that i built Without any Figma design</li>
+                                                <li>Adding animations as i lacked Animation Skill</li>
+                                                <li>First time using 3rd party package like <i>"Copy-to-Clipboard"</i></li>
                                             </ul>
                                         </div>
                                     </div>
