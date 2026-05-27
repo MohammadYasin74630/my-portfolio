@@ -51,14 +51,14 @@ function Projects() {
 
                     <div className=" max-w-[60ch] xl:mx-auto">
                         <h2 className="text-2xl font-bold">My Projects</h2>
-                        <p className="text-xs select-none opacity-0">Spent around two years building a strong foundation in HTML, CSS, JavaScript, ReactJS, ExpressJS responsive design, and programming fundamentals.</p>
+                        <p className="text-xs select-none opacity-0">This is dummy text to keep the header size same as the above sections. this text ensures that projects heading takes same space as all the other section in every device size.</p>
                     </div>
                 </div>
 
 
                 <div className="grid gap-10 pb-40 sm:pb-8 md:pb-0 xl:pb-8" ref={container}>
 
-                    <motion.div className=" sticky will-change-transform" style={{ scale: chillgamerScale, top: "0" }}>
+                    <motion.div className="sticky top-0 will-change-transform" style={{ scale: chillgamerScale }}>
 
                         <div className=" w-11/12 lg:w-8/12 xl:w-6/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
 
@@ -157,7 +157,7 @@ function Projects() {
                     </motion.div>
 
 
-                    <motion.div className=" sticky will-change-transform" style={{ scale: vroomrentsScale, top: "10vh" }}>
+                    <motion.div className="sticky top-[10vh] will-change-transform" style={{ scale: vroomrentsScale }}>
 
                         <div className=" w-11/12 lg:w-8/12 xl:w-6/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300">
 
@@ -257,7 +257,7 @@ function Projects() {
                     </motion.div>
 
 
-                    <motion.div className=" sticky will-change-transform" style={{ scale: resiflowScale, top: "20vh" }}>
+                    <motion.div className="sticky top-[20vh] will-change-transform" style={{ scale: resiflowScale }}>
 
                         <div className=" w-11/12 lg:w-8/12 xl:w-6/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
 
@@ -356,7 +356,7 @@ function Projects() {
 
                     </motion.div>
 
-                    <motion.div className=" sticky will-change-transform" style={{ scale: discountproScale, top: "30vh" }}>
+                    <motion.div className="sticky top-[30vh] will-change-transform" style={{ scale: discountproScale }}>
 
                         <div className=" w-11/12 lg:w-8/12 xl:w-6/12 mx-auto bg-base-100 text-base-content p-4 rounded-t-sm flex max-[425px]:flex-col gap-2 items-center justify-between border border-base-300 ">
 

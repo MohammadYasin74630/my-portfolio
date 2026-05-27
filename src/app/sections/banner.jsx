@@ -61,7 +61,7 @@ function Banner() {
                         }}
                         style={{ willChange: "transform" }}
                     >
-                        <Image className="object-cover object-top" src={myPhoto} alt="dev's photo" />
+                        <Image className="object-cover object-top" src={myPhoto} alt="dev's photo" loading="eager" />
                     </motion.div>
 
                 </div>

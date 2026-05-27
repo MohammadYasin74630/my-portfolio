@@ -62,15 +62,15 @@ function About() {
                             <p className="pl-4 text-lg">I spent two years self-learning web development before enrolling in a professional MERN stack course. I now specialize in:</p>
                             <div className="flex flex-wrap gap-2 pl-4">
                                 {/* later badges are downloaded from: https://github.com/inttter/md-badges?tab=readme-ov-file */}
-                                <Image className="rounded-sm border border-base-100" src={nextjs} alt="react logo" />
-                                <Image className="rounded-sm border border-base-100/50" src={express} alt="expressJs logo" />
-                                <Image className="rounded-sm border border-base-100/50" src={mongodb} alt="mongodb logo" />
-                                <Image className="rounded-sm border border-base-100/50 w-[90px]" src={postgres} alt="postgres logo" />
-                                <Image className="rounded-sm border border-base-100/50 w-[90px]" src={prisma} alt="prisma logo" />
-                                <Image className="rounded-sm border border-base-100/50 w-[90px]" src={authjs} alt="authjs logo" />
-                                <Image className="rounded-sm border border-base-100/50" src={tailwind} alt="tailwind logo" />
-                                <Image className="rounded-sm border border-base-100/50" src={git} alt="git logo" />
-                                <Image className="rounded-sm border border-base-100/50" src={github} alt="github logo" />
+                                <Image className="rounded-sm border border-base-100 size-auto" src={nextjs} alt="next JS logo" />
+                                <Image className="rounded-sm border border-base-100/50 size-auto" src={express} alt="expressJs logo" />
+                                <Image className="rounded-sm border border-base-100/50 size-auto" src={mongodb} alt="mongodb logo" />
+                                <Image className="rounded-sm border border-base-100/50 w-[90px] h-auto" src={postgres} alt="postgres logo" />
+                                <Image className="rounded-sm border border-base-100/50 w-[90px] h-auto" src={prisma} alt="prisma logo" />
+                                <Image className="rounded-sm border border-base-100/50 w-[90px] h-auto" src={authjs} alt="authjs logo" />
+                                <Image className="rounded-sm border border-base-100/50 size-auto" src={tailwind} alt="tailwind logo" />
+                                <Image className="rounded-sm border border-base-100/50 size-auto" src={git} alt="git logo" />
+                                <Image className="rounded-sm border border-base-100/50 size-auto" src={github} alt="github logo" />
                             </div>
                         </div>
 
