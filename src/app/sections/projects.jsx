@@ -64,15 +64,15 @@ function Projects() {
 
                             <h3 className="text-xl">ChillGamer</h3>
                             <div className="flex gap-2 items-center w-min ">
-                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewChilGamerRequirement} title="View requirements">
+                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" onClick={viewChilGamerRequirement} title="View requirements">
                                     <IoDocumentTextOutline />
                                 </button>
 
-                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ChillGamer-Client-Side" target="_blank" title="View codes">
+                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" href="https://github.com/MohammadYasin74630/ChillGamer-Client-Side" target="_blank" title="View codes">
                                     <FiGithub />
                                 </Link>
 
-                                <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90 ">
+                                <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform ">
                                     <div className="border-animate absolute inset-0 scale-200"></div>
 
                                     <Link
@@ -163,15 +163,15 @@ function Projects() {
 
                             <h3 className="text-xl">VroomRents</h3>
                             <div className="flex gap-2 items-center w-min ">
-                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewVroomRentsRequirement} title="View requirements" >
+                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" onClick={viewVroomRentsRequirement} title="View requirements" >
                                     <IoDocumentTextOutline />
                                 </button>
 
-                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/VroomRents-client-side" target="_blank" title="View codes">
+                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" href="https://github.com/MohammadYasin74630/VroomRents-client-side" target="_blank" title="View codes">
                                     <FiGithub />
                                 </Link>
 
-                                <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90 ">
+                                <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform ">
                                     <div className="border-animate absolute inset-0 scale-200"></div>
 
                                     <Link
@@ -263,15 +263,15 @@ function Projects() {
 
                             <h3 className="text-xl">ResiFlow</h3>
                             <div className="flex gap-2 items-center w-min ">
-                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewResiflowRequirement} title="View requirements" >
+                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" onClick={viewResiflowRequirement} title="View requirements" >
                                     <IoDocumentTextOutline />
                                 </button>
 
-                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/ResiFlow-client-side" target="_blank" title="View codes">
+                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" href="https://github.com/MohammadYasin74630/ResiFlow-client-side" target="_blank" title="View codes">
                                     <FiGithub />
                                 </Link>
 
-                                <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90 ">
+                                <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform ">
                                     <div className="border-animate absolute inset-0 scale-200"></div>
 
                                     <Link
@@ -362,15 +362,15 @@ function Projects() {
 
                             <h3 className="text-xl">DiscountPro</h3>
                             <div className="flex gap-2 items-center w-min ">
-                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" onClick={viewDiscountProRequirement} title="View requirements" >
+                                <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" onClick={viewDiscountProRequirement} title="View requirements" >
                                     <IoDocumentTextOutline />
                                 </button>
 
-                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90" href="https://github.com/MohammadYasin74630/DiscountPro" target="_blank" title="View codes">
+                                <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" href="https://github.com/MohammadYasin74630/DiscountPro" target="_blank" title="View codes">
                                     <FiGithub />
                                 </Link>
 
-                                <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 transition-all active:scale-90 ">
+                                <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform ">
                                     <div className="border-animate absolute inset-0 scale-200"></div>
 
                                     <Link

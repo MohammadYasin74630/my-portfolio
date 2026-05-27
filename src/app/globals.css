@@ -102,6 +102,12 @@ html {
   }
 }
 
+.custom-scrollbar {
+  /* scrollbar-width: thin; */
+  /* scrollbar-gutter: auto !important; */
+  scrollbar-color: var(--color-base-300) var(--color-base-100);
+}
+
 .border-animate {
   background: conic-gradient(from 0deg,
       var(--color-base-300),

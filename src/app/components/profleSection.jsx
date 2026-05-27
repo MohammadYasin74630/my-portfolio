@@ -21,27 +21,32 @@ function ProfleSection() {
     <div>
       <h3 className="text-xl font-dela text-center mb-3">Mohammad Yasin</h3>
       <div className="relative">
-        <Image className="rounded-sm h-48 object-cover object-[0px_-80px]" src={img3} alt="developer's image" />
+        <Image
+          className="rounded-sm h-48 object-cover object-[0px_-80px]"
+          src={img3}
+          alt="developer's image"
+          loading="lazy"
+        />
 
-        <button className="absolute bottom-2 left-1/2 -translate-x-1/2 shadow cursor-pointer transition-[scale] active:scale-90 bg-base-100 px-2 py-0.5 rounded-sm" onClick={viewCertificate}>View</button>
+        <button className="absolute bottom-2 left-1/2 -translate-x-1/2 cursor-pointer transition-[scale] active:scale-90 bg-base-100 px-2 py-0.5 rounded-sm" onClick={viewCertificate}>View</button>
       </div>
 
       <div className="flex gap-1 justify-evenly my-4">
 
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="https://www.facebook.com/mohammad.sahadat.587" target='_blank'>
-          <FaFacebookF className='text-[20px] text-base-content mx-auto group-hover:text-info' />
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#0766ff] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://www.facebook.com/mohammad.sahadat.587" target='_blank'>
+          <FaFacebookF className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="https://wa.me/+8801845737600" target='_blank'>
-          <IoLogoWhatsapp className='text-[20px] text-base-content mx-auto group-hover:text-success' />
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#25d366] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://wa.me/+8801845737600" target='_blank'>
+          <IoLogoWhatsapp className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="https://x.com/md_yasin_74630" target='_blank'>
-          <BsTwitterX className='text-[20px] text-base-content mx-auto group-hover:text-secondary' />
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-black hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://x.com/md_yasin_74630" target='_blank'>
+          <BsTwitterX className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="https://t.me/mohammad_yasin74630" target='_blank'>
-          <FaTelegramPlane className='text-[20px] text-base-content mx-auto group-hover:text-info' />
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#3390ec] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://t.me/mohammad_yasin74630" target='_blank'>
+          <FaTelegramPlane className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:cursor-pointer hover:shadow-sm shadow-base-content/30 group transition-all active:scale-90" href="http://discord.com/users/1256469260545560591" target='_blank'>
-          <FaDiscord className='text-[20px] text-base-content mx-auto group-hover:text-[#5663f2]' />
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#5663f2] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="http://discord.com/users/1256469260545560591" target='_blank'>
+          <FaDiscord className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
 
       </div>
