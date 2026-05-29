@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Syne } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Container from "./components/packageContainers";
@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const syne = Syne({
-  // weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-syne",
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
   subsets: ["latin"],
 });
 
@@ -137,7 +137,7 @@ export default function RootLayout({ children }) {
       <NavProvider>
         <PdfProvider>
           <body
-            className={`${syne.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-syne max-w-[2000px] mx-auto selection:bg-info/50`}
+            className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-poppins max-w-[2000px] mx-auto selection:bg-info/50`}
           >
             {/* <VideoBackground /> */}
             <LenisProvider>

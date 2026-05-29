@@ -1,10 +1,3 @@
-
-
-import chillGamerLogo from "../assets/project logos/chill-gamer-logo.png"
-import vrooRentsLogo from "../assets/project logos/vroom-rents.webp"
-import resiFlowLogo from "../assets/project logos/resiflow.webp"
-import discountProLogo from "../assets/project logos/discount-pro-logo.png"
-
 import { useRef } from "react"
 import { useScroll, useTransform } from "motion/react"
 import SectionObserver from "../components/sectionObserver"

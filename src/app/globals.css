@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-.font-syne {
-  font-family: var(--font-syne);
+.font-poppins {
+  font-family: var(--font-poppins);
 }
 
 @plugin "daisyui" {

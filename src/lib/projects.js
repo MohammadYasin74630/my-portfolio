@@ -6,6 +6,11 @@ import vroomrents from "@/app/assets/project images/vroomRents.png"
 import resiflow from "@/app/assets/project images/resiflow.png"
 import discountPro from "@/app/assets/project images/discountPro.png"
 
+import chillGamerLogo from "@/app/assets/project logos/chill-gamer-logo.png"
+import vroomRentsLogo from "@/app/assets/project logos/vroom-rents.webp"
+import resiFlowLogo from "@/app/assets/project logos/resiflow.webp"
+import discountProLogo from "@/app/assets/project logos/discount-pro-logo.png"
+
 import { chillGamerReq, discountProReq, resiFlowReq, vroomRentsReq } from "@/lib/requirements"
 
 
@@ -14,7 +19,10 @@ export const projectsObj = [
         id: 1,
         scale: "chillgamerScale",
         top: 0,
+        logo: chillGamerLogo,
+        logoAlt: "chill gamer logo",
         heading: "ChillGamer",
+        shortDescription: "Game review platform",
         pdfFn: () => {
             Reoverlay.showModal(ResumeModal, { file: "/assignment requirement docs/_Assignment Category_ Camellia.pdf" })
         },
@@ -32,7 +40,10 @@ export const projectsObj = [
         id: 2,
         scale: "vroomrentsScale",
         top: "10vh",
+        logo: vroomRentsLogo,
+        logoAlt: "Vroom Rents logo",
         heading: "VroomRents",
+        shortDescription: "Car rental platform",
         pdfFn: () => {
             Reoverlay.showModal(ResumeModal, { file: "/assignment requirement docs/assignment_category_15.pdf" })
         },
@@ -50,7 +61,10 @@ export const projectsObj = [
         id: 3,
         scale: "resiflowScale",
         top: "20vh",
+        logo: resiFlowLogo,
+        logoAlt: "Resi Flow logo",
         heading: "ResiFlow",
+        shortDescription: "Apartment management",
         pdfFn: () => {
             Reoverlay.showModal(ResumeModal, { file: "/assignment requirement docs/assignment12_category_012.pdf" })
         },
@@ -68,7 +82,10 @@ export const projectsObj = [
         id: 4,
         scale: "discountproScale",
         top: "30vh",
+        logo: discountProLogo,
+        logoAlt: "Discount Pro logo",
         heading: "DiscountPro",
+        shortDescription: "Coupon collection",
         pdfFn: () => {
             Reoverlay.showModal(ResumeModal, { file: "/assignment requirement docs/Assignment-09-005.pdf" })
         },
