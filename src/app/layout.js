@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Container from "./components/packageContainers";
@@ -7,6 +8,37 @@ import Footer from "./components/footer";
 import NavProvider from "./components/navProvider";
 import PdfProvider from "./components/pdfProvider";
 import VideoBackground from "./components/videoBackground";
+
+export const arminGrotesk = localFont({
+  src: [
+    {
+      path: "./fonts/Armin-Grotesk/ArminGrotesk-Thin.woff2",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Armin-Grotesk/ArminGrotesk-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Armin-Grotesk/ArminGrotesk-SemiBold.woff2",
+      weight: "500 600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Armin-Grotesk/ArminGrotesk-UltraBold.woff2",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Armin-Grotesk/ArminGrotesk-Black.woff2",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-armin",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -137,7 +169,7 @@ export default function RootLayout({ children }) {
       <NavProvider>
         <PdfProvider>
           <body
-            className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-poppins max-w-[2000px] mx-auto selection:bg-info/50`}
+            className={`${arminGrotesk.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-armin max-w-[2000px] mx-auto selection:bg-info/50`}
           >
             {/* <VideoBackground /> */}
             <LenisProvider>

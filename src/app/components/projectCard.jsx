@@ -21,7 +21,7 @@ function ProjectCard({ cardScale, projectInfo }) {
                         <Image className='bg-success size-12 rounded-lg object-contain' src={projectInfo.logo} alt={projectInfo.logoAlt} />
                         <div className='max-[425px]:hidden'>
                             <h3 className="text-lg font-semibold">{projectInfo.heading}</h3>
-                            <p className='text-sm font-medium text-gray-500 -mt-1'>{projectInfo.shortDescription}</p>
+                            <p className='text-sm font-medium text-base-content/60 -mt-1'>{projectInfo.shortDescription}</p>
                         </div>
                     </div>
 
