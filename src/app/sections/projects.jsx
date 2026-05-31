@@ -30,7 +30,7 @@ function Projects() {
                 <div className="grid md:grid-cols-2 gap-4 w-11/12 mx-auto min-[1120px]:items-center mt-20">
 
                     <div className=" max-w-[60ch] xl:mx-auto">
-                        <h2 className="text-2xl font-bold">My Projects</h2>
+                        <h2 className="text-2xl font-bold tracking-wider">My Projects</h2>
                         <p className="text-xs select-none opacity-0">This is dummy text to keep the header size same as the above sections. this text ensures that projects heading takes same space as all the other section in every device size.</p>
                     </div>
                 </div>

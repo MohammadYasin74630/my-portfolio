@@ -22,7 +22,7 @@ function Banner() {
                     <div className="max-w-[75ch] mx-auto space-y-2 lg:space-y-4 max-lg:order-1 ">
                         <div className="text-2xl min-[350px]:text-4xl min-[1020px]:text-6xl">
                             <p className="font-bold mb-2">Hello ! I'm</p>
-                            <h1 className="font-bold">Mohammad Yasin,</h1>
+                            <h1 className="font-bold tracking-wider">Mohammad Yasin,</h1>
                         </div>
                         <div className="my-5 xl:my-10">
                             <h2 className="text-lg min-[350px]:text-xl lg:text-2xl mb-3">I build Next.js web applications for startups and small businesses.</h2>
@@ -61,7 +61,7 @@ function Banner() {
                         }}
                         style={{ willChange: "transform" }}
                     >
-                        <Image className="object-cover object-top" src={myPhoto} alt="dev's photo" loading="eager" />
+                        <Image className="object-cover object-top bg-[#392c28]" src={myPhoto} alt="dev's photo" loading="eager" />
                     </motion.div>
 
                 </div>

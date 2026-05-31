@@ -41,52 +41,52 @@ function Journey() {
 
                     <div className="max-w-[60ch] xl:mx-auto">
 
-                        <h2 className="text-2xl font-bold w-11/12">My Journey</h2>
+                        <h2 className="text-2xl font-bold w-11/12 tracking-wider">My Journey</h2>
                         <p className="mt-2 mb-3 font-medium text-base-content/60">A timeline of my learning, growth, and achievements.</p>
 
                         <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                             <li>
-                                <div className="timeline-middle bg-primary-content p-2 rounded-full">
+                                <div className="timeline-middle bg-warning p-2 rounded-full">
                                     <PiBookOpenLight className="text-white" size={24} />
                                 </div>
                                 <div className="timeline-end md:mb-2 mt-4 ml-4">
-                                    <time className="text-xs text-base-100 bg-primary-content/80 py-1 px-2 rounded-lg">January 2021</time>
+                                    <time className="text-xs text-base-100 bg-warning/80 py-1 px-2 rounded-lg">January 2021</time>
                                     <div className="text-lg font-semibold mt-2 mb-0.5 leading-normal">Started Learning Web Development</div>
                                     <p className="text-sm leading-normal font-medium text-base-content/60">Started learning web development from YouTube and self-practice. Spent around two years building a strong foundation in HTML, CSS, JavaScript, ReactJS, ExpressJS responsive design, and programming fundamentals.</p>
                                 </div>
-                                <hr className="bg-primary-content/50" />
+                                <hr className="bg-warning/50" />
                             </li>
                             <li>
-                                <hr className="bg-primary-content/50" />
-                                <div className="timeline-middle bg-primary-content p-2 rounded-full">
+                                <hr className="bg-warning/50" />
+                                <div className="timeline-middle bg-warning p-2 rounded-full">
                                     <SlGraduation className="text-white" size={24} />
                                 </div>
                                 <div className="timeline-end md:mb-2 mt-4 ml-4">
-                                    <time className="text-xs text-base-100 bg-primary-content/80 py-1 px-2 rounded-lg">July 2024</time>
+                                    <time className="text-xs text-base-100 bg-warning/80 py-1 px-2 rounded-lg">July 2024</time>
                                     <div className="text-lg font-semibold mt-2 mb-0.5 leading-normal">Complete Web Development Course</div>
                                     <p className="text-sm leading-normal font-medium text-base-content/60">Completed a 6-month MERN Stack course from Programming Hero. Built multiple projects and my portfolio during this time, earned a certificate, and got selected for the SCIC program.</p>
                                 </div>
-                                <hr className="bg-primary-content/50" />
+                                <hr className="bg-warning/50" />
                             </li>
                             <li>
-                                <hr className="bg-primary-content/50" />
-                                <div className="timeline-middle bg-primary-content p-2 rounded-full">
+                                <hr className="bg-warning/50" />
+                                <div className="timeline-middle bg-warning p-2 rounded-full">
                                     <RiBriefcaseFill className="text-white" size={24} />
                                 </div>
                                 <div className="timeline-end md:mb-2 mt-4 ml-4">
-                                    <time className="text-xs text-base-100 bg-primary-content/80 py-1 px-2 rounded-lg">July 2025</time>
+                                    <time className="text-xs text-base-100 bg-warning/80 py-1 px-2 rounded-lg">July 2025</time>
                                     <div className="text-lg font-semibold mt-2 mb-0.5 leading-normal">MERN Stack Internship — Aspire Internship, CUET</div>
                                     <p className="text-sm leading-normal font-medium text-base-content/60">Completed a 4-month MERN Stack internship at Chittagong University of Engineering & Technology. Worked on converting Figma designs into responsive frontends, deploying projects to cPanel, and leading a frontend team for a CMS project in the final month.</p>
                                 </div>
-                                <hr className="bg-primary-content/50" />
+                                <hr className="bg-warning/50" />
                             </li>
                             <li>
-                                <hr className="bg-primary-content/50" />
-                                <div className="timeline-middle bg-primary-content p-2 rounded-full">
+                                <hr className="bg-warning/50" />
+                                <div className="timeline-middle bg-warning p-2 rounded-full">
                                     <MdLaptopMac className="text-white" size={24} />
                                 </div>
                                 <div className="timeline-end md:mb-2 mt-4 ml-4">
-                                    <time className="text-xs text-base-100 bg-primary-content/80 py-1 px-2 rounded-lg">April 2026</time>
+                                    <time className="text-xs text-base-100 bg-warning/80 py-1 px-2 rounded-lg">April 2026</time>
                                     <div className="text-lg font-semibold mt-2 mb-0.5 leading-normal">Freelancing Training — DYD E-Learning & Earning LTD</div>
                                     <p className="text-sm leading-normal font-medium text-base-content/60">Joined a 3-month freelancing program under Department of Youth Development. Learned WordPress, SEO, and digital marketing, and received a government-verifiable certificate after completion.</p>
                                 </div>
@@ -98,7 +98,7 @@ function Journey() {
                     <div>
 
                         <div className="flex items-center gap-4 mb-2">
-                            <AchievementIcon className="text-primary-content size-8 -mt-2" />
+                            <AchievementIcon className="text-warning size-8 -mt-2" />
 
                             <p className="text-lg font-semibold -ml-1">Certificates</p>
                             <hr className="w-full border-gray-300" />
