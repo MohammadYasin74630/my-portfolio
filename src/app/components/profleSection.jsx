@@ -36,7 +36,7 @@ function ProfleSection() {
         <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#0766ff] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://www.facebook.com/mohammad.sahadat.587" target='_blank'>
           <FaFacebookF className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#25d366] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://wa.me/+8801845737600" target='_blank'>
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#25d366] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://wa.me/+8801774548996" target='_blank'>
           <IoLogoWhatsapp className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
         <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-black hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://x.com/md_yasin_74630" target='_blank'>

@@ -92,6 +92,36 @@ html {
   }
 }
 
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-bg-color {
+  background: linear-gradient(-45deg,
+      var(--color-warning),
+      var(--color-warning-content),
+      var(--color-warning-content),
+      var(--color-warning));
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+.custom-scrollbar {
+  /* scrollbar-width: thin; */
+  /* scrollbar-gutter: auto !important; */
+  scrollbar-color: var(--color-base-300) var(--color-base-100);
+}
+
 @keyframes borderRotate {
   0% {
     transform: rotate(0deg);
@@ -100,12 +130,6 @@ html {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.custom-scrollbar {
-  /* scrollbar-width: thin; */
-  /* scrollbar-gutter: auto !important; */
-  scrollbar-color: var(--color-base-300) var(--color-base-100);
 }
 
 .border-animate {

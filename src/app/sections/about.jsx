@@ -18,9 +18,6 @@ import { FiServer } from "react-icons/fi";
 import { IoMailOutline } from "react-icons/io5";
 import styles from "./accordion.module.css";
 import { IoIosArrowDown } from "react-icons/io";
-import { TiInfoLarge } from "react-icons/ti";
-import { FaQuestion } from "react-icons/fa";
-import { PiStarFourFill } from "react-icons/pi";
 import AboutYear from "./about-year"
 import SectionObserver from "../components/sectionObserver"
 
@@ -33,7 +30,7 @@ const AccordionItem = ({ header, ...rest }) => (
                 <IoIosArrowDown className={styles.chevron} />
             </>
         }
-        className={`${styles.item} mt-2  border !border-base-content/10 rounded-lg`}
+        className={`${styles.item} mt-2 border !border-base-content/10 rounded-lg`}
         buttonProps={{
             className: ({ isEnter }) =>
                 `${styles.itemBtn} ${isEnter && styles.itemBtnExpanded} rounded-lg`,
@@ -71,7 +68,7 @@ function About() {
                                 <FaCode className="-mt-0.5" size={20} /> SKILLS
                             </h2>
 
-                            <p className="text-lg">I spent two years self-learning web development before enrolling in a professional MERN stack course. I now specialize in:</p>
+                            <p className="text-lg md:max-lg:hidden">I spent two years self-learning web development before enrolling in a professional MERN stack course. I now specialize in:</p>
 
                             <div className="flex flex-wrap gap-2">
                                 {/* later badges are downloaded from: https://github.com/inttter/md-badges?tab=readme-ov-file */}

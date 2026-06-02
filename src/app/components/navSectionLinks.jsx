@@ -1,6 +1,7 @@
 import React from 'react'
 import { GoHomeFill } from "react-icons/go";
 import { FaMeh } from "react-icons/fa";
+import { TiInfoLarge } from "react-icons/ti";
 import { MdRoute } from "react-icons/md";
 import { FaBriefcase } from "react-icons/fa6";
 import { useNavContext } from './navProvider';
@@ -40,7 +41,7 @@ function NavSectionLinks() {
                 onClick={(e) => scrollTo("about", e)}
                 data-tooltip-id="my-tooltip" data-tooltip-content="About Me"
             >
-                <FaMeh className={`relative text-base-content mx-auto group-hover:text-success transition-colors ${activeSection === "about" && "text-success"}`} />
+                <TiInfoLarge className={`relative text-base-content mx-auto scale-150 group-hover:text-success transition-colors ${activeSection === "about" && "text-success"}`} />
             </a>
 
             <a className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-base-200 hover:cursor-pointer group active:scale-90 transition-colors transition-transform"

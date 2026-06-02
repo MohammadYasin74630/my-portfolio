@@ -194,12 +194,13 @@ function ContactForm({ setClose }) {
                     <div className='text-base font-sans space-y-2'>
                         <div className='flex items-center gap-x-2 -mt-2 '>
                             <IoLogoWhatsapp className='text-lg text-[#1daa61]' />
-                            <p>(+88) 01912-898819</p>
+                            <p>(+88) 01814-174523</p>
                         </div>
                         <div className='flex items-center gap-x-2 mb-2 '>
                             <SiGmail className='text-[#ea4335]' />
                             <p>md.yasin.dev1@gmail.com</p>
                         </div>
+                        <div className="divider my-0">or</div>
                     </div>
 
                     <label className="fieldset-label">Email <span className='font-sans text-error -ml-1'>*</span></label>
