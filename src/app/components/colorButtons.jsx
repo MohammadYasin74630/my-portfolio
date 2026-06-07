@@ -1,17 +1,18 @@
 "use client"
-import { useEffect } from 'react'
-import { themeChange } from 'theme-change'
 
 function ColorButtons() {
 
-    useEffect(() => {
-        themeChange(false)
-    }, [])
+    const test = (e) => {
+        
+        if(e.target.nodeName === "BUTTON") {
+            console.log(document.documentElement.setAttribute("data-theme", e.target.getAttribute("data-set-theme")))
+        }
+    }
 
     return (
         <>
             <h3 className='my-4 font-bold font-sans'>THEME</h3>
-            <div className='flex gap-2 flex-wrap '>
+            <div className='flex gap-2 flex-wrap ' onClick={test}>
                 <button
                     className='w-8 h-8 rounded-full cursor-pointer bg-[#f8f8f8] border border-base-content/70'
                     data-set-theme="light" data-act-class="ActiveTheme">
