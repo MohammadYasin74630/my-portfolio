@@ -109,7 +109,7 @@ function ContactForm({ setClose }) {
                                                                 src="https://www.mail-signatures.com/signature-generator/img/templates/blooming-sale/tt.png"
                                                                 style="border:0px;vertical-align:middle;height:18px;width:18px">
                                                         </a>&nbsp;</span>&nbsp;<span>
-                                                        <a href="https://wa.me/+8801845737600" rel="noopener"
+                                                        <a href="https://wa.me/+8801774548996" rel="noopener"
                                                             style="background-color:transparent;color:rgb(253, 209, 69)" target="_blank">
                                                             <img border="0" width="18" alt="whatsapp icon"
                                                                 src="https://www.mail-signatures.com/signature-generator/img/templates/blooming-sale/wa.png"

@@ -14,7 +14,7 @@ import ResumeModal from "./resumeModal";
 function ProfleSection() {
 
   const viewCertificate = () => {
-    Reoverlay.showModal(ResumeModal, { file: "/business card vertical.pdf" })
+    Reoverlay.showModal(ResumeModal, { file: "/pdf/business card vertical.pdf" })
   }
 
   return (
@@ -33,19 +33,19 @@ function ProfleSection() {
 
       <div className="flex gap-1 justify-evenly my-4">
 
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#0766ff] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://www.facebook.com/mohammad.sahadat.587" target='_blank'>
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#0766ff] hover:cursor-pointer group active:scale-90 transition-[background-color,border-color,scale] duration-200" href="https://www.facebook.com/mohammad.sahadat.587" target='_blank'>
           <FaFacebookF className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#25d366] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://wa.me/+8801774548996" target='_blank'>
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#25d366] hover:cursor-pointer group active:scale-90 transition-[background-color,border-color,scale] duration-200" href="https://wa.me/+8801774548996" target='_blank'>
           <IoLogoWhatsapp className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-black hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://x.com/md_yasin_74630" target='_blank'>
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-black hover:cursor-pointer group active:scale-90 transition-[background-color,border-color,scale] duration-200" href="https://x.com/md_yasin_74630" target='_blank'>
           <BsTwitterX className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#3390ec] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="https://t.me/mohammad_yasin74630" target='_blank'>
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#3390ec] hover:cursor-pointer group active:scale-90 transition-[background-color,border-color,scale] duration-200" href="https://t.me/mohammad_yasin74630" target='_blank'>
           <FaTelegramPlane className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
-        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#5663f2] hover:cursor-pointer group active:scale-90 transition-colors transition-transform" href="http://discord.com/users/1256469260545560591" target='_blank'>
+        <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#5663f2] hover:cursor-pointer group active:scale-90 transition-[background-color,border-color,scale] duration-200" href="http://discord.com/users/1256469260545560591" target='_blank'>
           <FaDiscord className='text-[20px] text-base-content mx-auto group-hover:text-white' />
         </Link>
 

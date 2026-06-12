@@ -10,6 +10,7 @@ import Link from 'next/link';
 import ProfleSection from './profleSection';
 import GoogleMap from './googleMap';
 import NavSectionLinks from './navSectionLinks';
+import { Suspense } from 'react';
 
 const GmailIcon = (props) => (
   <svg
@@ -90,7 +91,9 @@ function Navbar() {
                 {/* Sidebar content here */}
                 <ProfleSection />
                 <GoogleMap />
-                <ColorButtons />
+                <Suspense fallback={<p>loading..</p>}>
+                  <ColorButtons />
+                </Suspense>
               </ul>
 
             </div>
@@ -113,13 +116,13 @@ function Navbar() {
 
           <FaArrowDownLong className='text-error scale-125 animate-[bounce_0.8s_infinite] max-md:hidden' />
 
-          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#0073b2] hover:cursor-pointer group transition-colors transition-transform active:scale-90"
+          <Link className="p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#0073b2] hover:cursor-pointer group transition-[background-color,border-color,scale] duration-200 active:scale-90"
             href="https://www.linkedin.com/in/mohammadyasin74630"
             target='_blank'>
             <FaLinkedinIn className='text-base-content mx-auto group-hover:text-white ' />
           </Link>
 
-          <Link className="max-sm:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-white hover:cursor-pointer group transition-colors transition-transform active:scale-90"
+          <Link className="max-sm:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-white hover:cursor-pointer group transition-[background-color,border-color,scale] duration-200 active:scale-90"
             href="mailto:md.yasin.dev1@gmail.com">
             <div className='relative'>
               <SiGmail className=' mx-auto ' />
@@ -127,13 +130,13 @@ function Navbar() {
             </div>
           </Link>
 
-          <Link className="max-md:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-black hover:cursor-pointer group transition-colors transition-transform active:scale-90"
+          <Link className="max-md:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-black hover:cursor-pointer group transition-[background-color,border-color,scale] duration-200 active:scale-90"
             href="https://github.com/MohammadYasin74630"
             target='_blank'>
             <VscGithub className=' text-base-content mx-auto group-hover:text-white' />
           </Link>
 
-          <Link className="max-md:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#ff5e00] hover:cursor-pointer group transition-colors transition-transform active:scale-90"
+          <Link className="max-md:hidden p-2 bg-base-100 rounded-lg border border-base-300 hover:border-base-content/30 hover:bg-[#ff5e00] hover:cursor-pointer group transition-[background-color,border-color,scale] duration-200 active:scale-90"
             href="https://stackoverflow.com/users/13922407"
             target='_blank' >
             <SiStackoverflow className=' text-base-content mx-auto group-hover:text-black ' />

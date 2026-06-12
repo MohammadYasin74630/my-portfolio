@@ -1,4 +1,4 @@
-import dbConnect from "@/app/lib/dbConnect";
+import dbConnect from "@/lib/dbConnect";
 import nodemailer from "nodemailer"
 
 let transporter = nodemailer.createTransport({

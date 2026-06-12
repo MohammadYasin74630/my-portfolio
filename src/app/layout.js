@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import NavProvider from "./components/navProvider";
 import PdfProvider from "./components/pdfProvider";
 import VideoBackground from "./components/videoBackground";
+import { getActiveTheme } from "@/lib/theme";
 
 export const arminGrotesk = localFont({
   src: [
@@ -121,7 +122,7 @@ export const metadata = {
 
     images: [
       {
-        url: "/og-image.png",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mohammad Yasin Portfolio Website",
@@ -134,7 +135,7 @@ export const metadata = {
     title: "Mohammad Yasin | Full Stack MERN Developer",
     description:
       "Explore the portfolio of Mohammad Yasin — MERN Stack Developer focused on React, Next.js, Express.js, MongoDB, and scalable web applications.",
-    images: ["/og-image.png"],
+    images: ["/images/og-image.png"],
   },
 
   robots: {
@@ -156,16 +157,17 @@ export const metadata = {
   },
 
   icons: {
-    icon: "/logo1.ico",
-    shortcut: "/logo1.ico",
+    icon: "/logo/logo1.ico",
+    shortcut: "/logo/logo1.ico",
     // apple: "/apple-touch-icon.png",
   },
 };
 
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  let theme = await getActiveTheme();
   return (
-    <html lang="en" data-theme="bumblebee" className="overflow-y-scrolls">
+    <html lang="en" data-theme={theme?.themeName || "light"} className="overflow-y-scrolls">
       <NavProvider>
         <PdfProvider>
           <body
@@ -191,7 +193,7 @@ export default function RootLayout({ children }) {
                   "@type": "Person",
                   name: "Mohammad Yasin",
                   url: "https://mohammad-yasin.vercel.app",
-                  image: "https://mohammad-yasin.vercel.app/og-image.png",
+                  image: "https://mohammad-yasin.vercel.app/images/og-image.png",
                   jobTitle: "Full Stack Web Developer",
                   nationality: "Bangladeshi",
                   knowsAbout: [

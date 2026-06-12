@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "title": "Understanding React Re-renders",
+        "slug": "understanding-react-rerenders",
+        "excerpt": "Learn what causes re-renders in React and how to optimize your components for better performance.",
+        "category": "React",
+        "tags": [
+            "React",
+            "Performance",
+            "JavaScript"
+        ],
+        "coverImage": "/images/blogs/react-rerenders.webp",
+        "featured": false,
+        "publishedAt": "2026-05-20",
+        "views": 5,
+        "author": {
+            "name": "Mohammad Yasin",
+            "avatar": "/images/yasin.jpeg"
+        },
+        "content": "<p>Your HTML content goes here...</p>"
+    },
+    {
+        "id": 2,
+        "title": "The Ultimate Guide to Server Components in Next.js 14",
+        "slug": "ultimate-guide-to-server-components-nextjs-14",
+        "excerpt": "Discover how Server Components work in Next.js 14 and improve your application's performance.",
+        "category": "Next.js",
+        "tags": [
+            "Next.js",
+            "React",
+            "Performance"
+        ],
+        "coverImage": "/images/blogs/nextjs-server-components.webp",
+        "featured": true,
+        "publishedAt": "2026-05-25",
+        "views": 6,
+        "author": {
+            "name": "Mohammad Yasin",
+            "avatar": "/images/yasin.jpeg"
+        },
+        "content": "<p>Your HTML content goes here...</p>"
+    },
+    {
+        "id": 3,
+        "title": "MongoDB Aggregation Pipeline Explained",
+        "slug": "mongodb-aggregation-pipeline-explained",
+        "excerpt": "A beginner-friendly guide to MongoDB Aggregation Pipeline with practical examples.",
+        "category": "MongoDB",
+        "tags": [
+            "MongoDB",
+            "Database",
+            "Backend"
+        ],
+        "coverImage": "/images/blogs/mongodb-aggregation.webp",
+        "featured": false,
+        "publishedAt": "2026-05-15",
+        "views": 6,
+        "author": {
+            "name": "Mohammad Yasin",
+            "avatar": "/images/yasin.jpeg"
+        },
+        "content": "<p>Your HTML content goes here...</p>"
+    },
+    {
+        "id": 4,
+        "title": "JWT Authentication from Scratch",
+        "slug": "jwt-authentication-from-scratch",
+        "excerpt": "Implement JWT authentication in a MERN stack application step by step.",
+        "category": "Backend",
+        "tags": [
+            "JWT",
+            "Authentication",
+            "Express"
+        ],
+        "coverImage": "/images/blogs/jwt-authentication.webp",
+        "featured": false,
+        "publishedAt": "2026-05-10",
+        "views": 6,
+        "author": {
+            "name": "Mohammad Yasin",
+            "avatar": "/images/yasin.jpeg"
+        },
+        "content": "<p>Your HTML content goes here...</p>"
+    },
+    {
+        "id": 5,
+        "title": "Error Handling in Express.js",
+        "slug": "error-handling-in-express-js",
+        "excerpt": "Best practices for handling errors in Express applications.",
+        "category": "Express.js",
+        "tags": [
+            "Express",
+            "Node.js",
+            "Backend"
+        ],
+        "coverImage": "/images/blogs/express-error-handling.webp",
+        "featured": false,
+        "publishedAt": "2026-05-12",
+        "views": 4,
+        "author": {
+            "name": "Mohammad Yasin",
+            "avatar": "/images/yasin.jpeg"
+        },
+        "content": "<p>Your HTML content goes here...</p>"
+    },
+    {
+        "id": 6,
+        "title": "How I Started My Journey as a Developer",
+        "slug": "how-i-started-my-journey-as-a-developer",
+        "excerpt": "My journey, lessons learned, and advice for beginners entering web development.",
+        "category": "Career",
+        "tags": [
+            "Career",
+            "Programming",
+            "Journey"
+        ],
+        "coverImage": "/images/blogs/developer-journey.webp",
+        "featured": false,
+        "publishedAt": "2026-05-08",
+        "views": 5,
+        "author": {
+            "name": "Mohammad Yasin",
+            "avatar": "/images/yasin.jpeg"
+        },
+        "content": "<p>Your HTML content goes here...</p>"
+    }
+]

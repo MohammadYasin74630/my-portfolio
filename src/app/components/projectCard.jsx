@@ -27,14 +27,14 @@ function ProjectCard({ cardScale, projectInfo }) {
 
                     <div className="flex gap-2 items-center w-min self-center ">
                         <div className='flex flex-col items-center gap-1'>
-                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" onClick={projectInfo.pdfFn}>
+                            <button className="text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-[background-color,border-color,box-shadow,scale] duration-200" onClick={projectInfo.pdfFn}>
                                 <IoDocumentTextOutline />
                             </button>
                             <small className='text-[9px]'>Docs</small>
                         </div>
 
                         <div className='flex flex-col items-center gap-1'>
-                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform" href={projectInfo.github}>
+                            <Link className="inline-block text-xl text-base-content cursor-pointer p-2 bg-base-100 rounded-lg border border-base-300 hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-[background-color,border-color,box-shadow,scale] duration-200" href={projectInfo.github}>
                                 <FiGithub />
                             </Link>
                             <small className='text-[9px]'>Code</small>
@@ -42,7 +42,7 @@ function ProjectCard({ cardScale, projectInfo }) {
 
 
                         <div className='flex flex-col items-center gap-1'>
-                            <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-colors transition-shadow transition-transform ">
+                            <div className="relative inline-block outline outline-base-300 rounded-lg p-px overflow-hidden hover:bg-base-200 hover:shadow-sm shadow-base-content/30 active:scale-90 transition-[background-color,border-color,box-shadow,scale] duration-200 ">
                                 <div className="border-animate absolute inset-0 scale-200"></div>
 
                                 <Link

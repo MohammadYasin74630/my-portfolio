@@ -1,5 +1,5 @@
 "use client"
-import "../lib/pdfWorkerConfig"
+import "../../lib/pdfWorkerConfig"
 import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';

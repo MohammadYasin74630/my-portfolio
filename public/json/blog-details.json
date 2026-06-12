@@ -1,0 +1,76 @@
+{
+    "id": 2,
+    "title": "The Ultimate Guide to Server Components in Next.js 14",
+    "slug": "ultimate-guide-to-server-components-nextjs-14",
+    "excerpt": "Discover how Server Components work in Next.js 14 and how they can improve performance, SEO, and developer experience.",
+    "coverImage": "/images/blogs/nextjs-server-components.webp",
+    "featured": true,
+    "publishedAt": "2026-05-25",
+    "updatedAt": "2026-05-28",
+    "views": 1248,
+    "isPublished": true,
+    "category": "Next.js",
+    "tags": [
+        "Next.js",
+        "React",
+        "Server Components",
+        "Performance"
+    ],
+    "author": {
+        "name": "Mohammad Yasin",
+        "avatar": "/images/yasin.jpeg",
+        "role": "MERN Stack Developer",
+        "bio": "I build full-stack applications with React, Next.js, Express, and MongoDB."
+    },
+    "content": "<h2>What Are Server Components?</h2>\\n    <p>Server Components are React components that render on the server instead of the client, reducing the amount of JavaScript sent to the browser.</p>\\n\\n    <h2>How Server Components Work</h2>\\n    <p>They allow you to fetch data directly inside your components and send only the rendered HTML to the client.</p>\\n\\n    <pre><code class='language-js'>\\nexport default async function Page() {\\n  const posts = await getPosts();\\n  return <Posts posts={posts\\n        } />;\\n    }\\n    </code></pre>\\n\\n    <h2>Benefits of Server Components</h2>\\n    <ul>\\n      <li>Smaller JavaScript bundles</li>\\n      <li>Improved performance</li>\\n      <li>Better SEO</li>\\n      <li>Simpler data fetching</li>\\n      <li>Reduced client-side complexity</li>\\n    </ul>\\n\\n    <h2>When Should You Use Server Components?</h2>\\n    <p>Server Components are ideal for dashboards, blogs, e-commerce pages, and any page that relies heavily on server-side data fetching.</p>\\n\\n    <blockquote>\\n      Server Components don't replace Client Components—they complement them.\\n    </blockquote>\\n\\n    <h2>Conclusion</h2>\\n    <p>Server Components are one of the biggest improvements introduced in modern React and Next.js.</p>\\n  ",
+    "seo": {
+        "title": "The Ultimate Guide to Server Components in Next.js 14 | Mohammad Yasin",
+        "description": "Learn how Server Components work in Next.js 14, their benefits, and when to use them to build faster and more scalable applications.",
+        "keywords": [
+            "Next.js",
+            "React",
+            "Server Components",
+            "Performance",
+            "SEO",
+            "Web Development"
+        ],
+        "alternates": {
+            "canonical": "https://mohammad-yasin.vercel.app/blog/ultimate-guide-to-server-components-nextjs-14"
+        },
+        "openGraph": {
+            "title": "The Ultimate Guide to Server Components in Next.js 14 | Mohammad Yasin",
+            "description": "Learn how Server Components work in Next.js 14 and build faster applications.",
+            "url": "https://mohammad-yasin.vercel.app/blog/ultimate-guide-to-server-components-nextjs-14",
+            "siteName": "Mohammad Yasin Portfolio",
+            "type": "article",
+            "publishedTime": "2026-05-25T00:00:00.000Z",
+            "modifiedTime": "2026-05-28T00:00:00.000Z",
+            "authors": [
+                "Mohammad Yasin"
+            ],
+            "images": [
+                {
+                    "url": "https://mohammad-yasin.vercel.app/images/blogs/nextjs-server-components.webp",
+                    "width": 1200,
+                    "height": 630,
+                    "alt": "The Ultimate Guide to Server Components in Next.js 14"
+                }
+            ]
+        },
+        "twitter": {
+            "card": "summary_large_image",
+            "title": "The Ultimate Guide to Server Components in Next.js 14 | Mohammad Yasin",
+            "description": "Learn how Server Components work in Next.js 14 and build faster applications.",
+            "images": [
+                "https://mohammad-yasin.vercel.app/images/blogs/nextjs-server-components.webp"
+            ]
+        },
+        "robots": {
+            "index": true,
+            "follow": true
+        }
+    },
+    "relatedPosts": [
+        "{...}"
+    ]
+}
