@@ -167,7 +167,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   let theme = await getActiveTheme();
   return (
-    <html lang="en" data-theme={theme?.themeName || "light"} className="overflow-y-scrolls">
+    <html lang="en" data-scroll-behavior="smooth" data-theme={theme?.themeName || "light"} className="overflow-y-scrolls">
       <NavProvider>
         <PdfProvider>
           <body

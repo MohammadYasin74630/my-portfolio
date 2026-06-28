@@ -1,13 +1,15 @@
 import React from 'react'
 import { GoHomeFill } from "react-icons/go";
-import { FaMeh } from "react-icons/fa";
 import { TiInfoLarge } from "react-icons/ti";
 import { MdRoute } from "react-icons/md";
 import { FaBriefcase } from "react-icons/fa6";
 import { useNavContext } from './navProvider';
+import { useRouter, usePathname } from 'next/navigation';
 
 function NavSectionLinks() {
     const { activeSection } = useNavContext();
+    const router = useRouter();
+    const pathname = usePathname();
 
     const position = {
         home: "link-1",
@@ -18,8 +20,13 @@ function NavSectionLinks() {
 
     const scrollTo = (section, e) => {
         e.preventDefault();
-        document.getElementById(section)?.scrollIntoView();
-        history.replaceState(null, "", `#${section}`);
+        if (pathname === "/") {
+            document.getElementById(section)?.scrollIntoView();
+            history.replaceState(null, "", `#${section}`);
+        }
+        else if (section === "home") {
+            router.push("/")
+        }
     }
 
     return (
