@@ -1,9 +1,8 @@
 {
-    "id": 2,
     "title": "The Ultimate Guide to Server Components in Next.js 14",
     "slug": "ultimate-guide-to-server-components-nextjs-14",
     "excerpt": "Discover how Server Components work in Next.js 14 and how they can improve performance, SEO, and developer experience.",
-    "coverImage": "/images/blogs/nextjs-server-components.webp",
+    "coverImage": "https://i.ibb.co.com/mF6gkCx2/image1.jpg",
     "featured": true,
     "publishedAt": "2026-05-25",
     "updatedAt": "2026-05-28",
@@ -50,7 +49,7 @@
             ],
             "images": [
                 {
-                    "url": "https://mohammad-yasin.vercel.app/images/blogs/nextjs-server-components.webp",
+                    "url": "https://i.ibb.co.com/mF6gkCx2/image1.jpg",
                     "width": 1200,
                     "height": 630,
                     "alt": "The Ultimate Guide to Server Components in Next.js 14"
@@ -62,15 +61,12 @@
             "title": "The Ultimate Guide to Server Components in Next.js 14 | Mohammad Yasin",
             "description": "Learn how Server Components work in Next.js 14 and build faster applications.",
             "images": [
-                "https://mohammad-yasin.vercel.app/images/blogs/nextjs-server-components.webp"
+                "https://i.ibb.co.com/mF6gkCx2/image1.jpg"
             ]
         },
         "robots": {
             "index": true,
             "follow": true
         }
-    },
-    "relatedPosts": [
-        "{...}"
-    ]
+    }
 }

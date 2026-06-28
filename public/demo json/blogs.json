@@ -10,9 +10,10 @@
             "Performance",
             "JavaScript"
         ],
-        "coverImage": "/images/blogs/react-rerenders.webp",
+        "coverImage": "https://i.ibb.co.com/mF6gkCx2/image1.jpg",
         "featured": false,
         "publishedAt": "2026-05-20",
+        "updatedAt": "2026-05-28",
         "views": 5,
         "author": {
             "name": "Mohammad Yasin",
@@ -31,9 +32,10 @@
             "React",
             "Performance"
         ],
-        "coverImage": "/images/blogs/nextjs-server-components.webp",
+        "coverImage": "https://i.ibb.co.com/mF6gkCx2/image1.jpg",
         "featured": true,
         "publishedAt": "2026-05-25",
+        "updatedAt": "2026-05-28",
         "views": 6,
         "author": {
             "name": "Mohammad Yasin",
@@ -52,9 +54,10 @@
             "Database",
             "Backend"
         ],
-        "coverImage": "/images/blogs/mongodb-aggregation.webp",
+        "coverImage": "https://i.ibb.co.com/mF6gkCx2/image1.jpg",
         "featured": false,
         "publishedAt": "2026-05-15",
+        "updatedAt": "2026-05-28",
         "views": 6,
         "author": {
             "name": "Mohammad Yasin",
@@ -73,9 +76,10 @@
             "Authentication",
             "Express"
         ],
-        "coverImage": "/images/blogs/jwt-authentication.webp",
+        "coverImage": "https://i.ibb.co.com/mF6gkCx2/image1.jpg",
         "featured": false,
         "publishedAt": "2026-05-10",
+        "updatedAt": "2026-05-28",
         "views": 6,
         "author": {
             "name": "Mohammad Yasin",
@@ -94,9 +98,10 @@
             "Node.js",
             "Backend"
         ],
-        "coverImage": "/images/blogs/express-error-handling.webp",
+        "coverImage": "https://i.ibb.co.com/mF6gkCx2/image1.jpg",
         "featured": false,
         "publishedAt": "2026-05-12",
+        "updatedAt": "2026-05-28",
         "views": 4,
         "author": {
             "name": "Mohammad Yasin",
@@ -115,9 +120,10 @@
             "Programming",
             "Journey"
         ],
-        "coverImage": "/images/blogs/developer-journey.webp",
+        "coverImage": "https://i.ibb.co.com/mF6gkCx2/image1.jpg",
         "featured": false,
         "publishedAt": "2026-05-08",
+        "updatedAt": "2026-05-28",
         "views": 5,
         "author": {
             "name": "Mohammad Yasin",
